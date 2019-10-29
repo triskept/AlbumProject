@@ -27,7 +27,40 @@ namespace AlbumProject.Data
             modelBuilder.Entity<Album>().HasData(
                 new Album()
                 {
+                    Id = 15,
+                    Title = "Songs in A Minor",
+                    ArtistId = 4,
+                    Image = "/images/girlonfire.jpg",
+                    Label = "J"
                 },
+
+                new Album()
+                {
+                    Id = 16,
+                    Title = "The Diary of Alicia Keys",
+                    ArtistId = 4,
+                    Image ="/images/girlonfire.jpg",
+                    Label = "J"
+                },
+
+                new Album()
+                {
+                    Id = 17,
+                    Title = "As I Am",
+                    ArtistId = 4,
+                    Image = "/images/girlonfire.jpg",
+                    Label = "J"
+                },
+
+                new Album()
+                {
+                    Id = 18,
+                    Title = "The Element of Freedom",
+                    ArtistId = 4,
+                    Image = "/images/girlonfire.jpg",
+                    Label = "J"
+                },
+                });
 
             modelBuilder.Entity<Artist>().HasData(
                 new Artist()
@@ -61,7 +94,7 @@ namespace AlbumProject.Data
                     Image = "/images/alicia-keys.jpg",
                     Age = 38,
                     Hometown = "New York, New York"
-                },
+                });
 
             modelBuilder.Entity<Song>().HasData(
                 new Song()
