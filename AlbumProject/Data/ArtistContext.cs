@@ -30,7 +30,7 @@ namespace AlbumProject.Data
                     Id = 15,
                     Title = "Songs in A Minor",
                     ArtistId = 4,
-                    Image = "/images/girlonfire.jpg",
+                    Image = "/images/songsinaminor.jpg",
                     Label = "J"
                 },
 
@@ -39,7 +39,7 @@ namespace AlbumProject.Data
                     Id = 16,
                     Title = "The Diary of Alicia Keys",
                     ArtistId = 4,
-                    Image = "/images/girlonfire.jpg",
+                    Image = "/images/diaryofakeys.jpg",
                     Label = "J"
                 },
 
@@ -48,7 +48,7 @@ namespace AlbumProject.Data
                     Id = 17,
                     Title = "As I Am",
                     ArtistId = 4,
-                    Image = "/images/girlonfire.jpg",
+                    Image = "/images/asiam.png",
                     Label = "J"
                 },
 
@@ -57,7 +57,7 @@ namespace AlbumProject.Data
                     Id = 18,
                     Title = "The Element of Freedom",
                     ArtistId = 4,
-                    Image = "/images/girlonfire.jpg",
+                    Image = "/images/elementoffreedom.jpg",
                     Label = "J"
                 },
 
@@ -75,7 +75,7 @@ namespace AlbumProject.Data
                     Id = 20,
                     Title = "Here",
                     ArtistId = 4,
-                    Image = "/images/girlonfire.jpg",
+                    Image = "/images/here.jpg",
                     Label = "RCA"
                 });
 
