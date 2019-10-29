@@ -11,8 +11,8 @@ namespace AlbumProject.Models
         public string Title { get; set; }
         public int Duration { get; set; }
 
-        ICollection<Song> Songs { get; set; }
-
+        public Album Album { get; set; }
+        public int AlbumId { get; set; }
 
         public Song()
         {

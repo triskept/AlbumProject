@@ -27,7 +27,23 @@ namespace AlbumProject.Data
             modelBuilder.Entity<Album>().HasData(
                 new Album()
                 {
+                    Id = 7,
                 },
+
+                new Album()
+                {
+                    Id = 7,
+                },
+
+                new Album()
+                {
+                    Id = 7,
+                },
+
+                new Album()
+                {
+                    Id = 7,
+                });
 
             modelBuilder.Entity<Artist>().HasData(
                 new Artist()
@@ -61,7 +77,7 @@ namespace AlbumProject.Data
                     Image = "/images/alicia-keys.jpg",
                     Age = 38,
                     Hometown = "New York, New York"
-                },
+                });
 
             modelBuilder.Entity<Song>().HasData(
                 new Song()
