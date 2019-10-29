@@ -108,7 +108,7 @@ namespace AlbumProject.Data
                 {
                     Id = 4,
                     Name = "Alicia Keys",
-                    Image = "/images/alicia-keys.jpg",
+                    Image = "/images/alicia_keys.jpg",
                     Age = 38,
                     Hometown = "New York, New York"
                 });
