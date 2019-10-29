@@ -98,7 +98,7 @@ namespace AlbumProject.Data
             modelBuilder.Entity<Song>().HasData(
                 new Song()
                 {
-                    Id = 1,
+                    Id = 105,
                     Title = "Radioactive",
                     Duration = "3:07",
                     AlbumId = 7,
@@ -106,7 +106,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 2,
+                    Id = 106,
                     Title = "Tiptoe",
                     Duration = "3:14",
                     AlbumId = 7,
@@ -114,7 +114,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 3,
+                    Id = 107,
                     Title = "It's Time",
                     Duration = "4:01",
                     AlbumId = 7,
@@ -122,7 +122,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 4,
+                    Id = 108,
                     Title = "Demons",
                     Duration = "2:58",
                     AlbumId = 7,
@@ -130,7 +130,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 5,
+                    Id = 109,
                     Title = "On Top Of The World",
                     Duration = "3:10",
                     AlbumId = 7,
@@ -138,7 +138,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 6,
+                    Id = 110,
                     Title = "Amsterdam",
                     Duration = "4:02",
                     AlbumId = 7,
@@ -146,7 +146,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 7,
+                    Id = 111,
                     Title = "Hear Me",
                     Duration = "3:53",
                     AlbumId = 7,
@@ -154,7 +154,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 8,
+                    Id = 112,
                     Title = "Every Night",
                     Duration = "3:36",
                     AlbumId = 7,
@@ -162,7 +162,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 9,
+                    Id = 113,
                     Title = "Bleeding Out",
                     Duration = "3:42",
                     AlbumId = 7,
@@ -170,7 +170,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 10,
+                    Id = 114,
                     Title = "Underdog",
                     Duration = "3:27",
                     AlbumId = 7,
@@ -178,7 +178,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 11,
+                    Id = 115,
                     Title = "Nothing Left To Say/Rocks",
                     Duration = "8:57",
                     AlbumId = 7,
@@ -186,7 +186,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 12,
+                    Id = 116,
                     Title = "Shots",
                     Duration = "3:53",
                     AlbumId = 8,
@@ -194,7 +194,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 13,
+                    Id = 117,
                     Title = "Gold",
                     Duration = "3:37",
                     AlbumId = 8,
@@ -202,7 +202,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 14,
+                    Id = 118,
                     Title = "Smoke And Mirrors",
                     Duration = "4:21",
                     AlbumId = 8,
@@ -210,7 +210,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 15,
+                    Id = 119,
                     Title = "I'm So Sorry",
                     Duration = "3:51",
                     AlbumId = 8,
@@ -218,7 +218,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 16,
+                    Id = 120,
                     Title = "I Bet My Life",
                     Duration = "3:12",
                     AlbumId = 8,
@@ -226,7 +226,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 17,
+                    Id = 121,
                     Title = "Polaroid",
                     Duration = "3:52",
                     AlbumId = 8,
@@ -234,7 +234,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 18,
+                    Id = 122,
                     Title = "Friction",
                     Duration = "3:22",
                     AlbumId = 8,
@@ -242,7 +242,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 19,
+                    Id = 123,
                     Title = "It Comes Back To You",
                     Duration = "3:38",
                     AlbumId = 8,
@@ -250,7 +250,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 20,
+                    Id = 124,
                     Title = "Dream",
                     Duration = "4:19",
                     AlbumId = 8,
@@ -258,7 +258,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 21,
+                    Id = 125,
                     Title = "Trouble",
                     Duration = "3:13",
                     AlbumId = 8,
@@ -266,7 +266,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 22,
+                    Id = 126,
                     Title = "Summer",
                     Duration = "3:39",
                     AlbumId = 8,
@@ -274,7 +274,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 23,
+                    Id = 127,
                     Title = "Hopeless Opus",
                     Duration = "4:02",
                     AlbumId = 8,
@@ -282,7 +282,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 24,
+                    Id = 128,
                     Title = "The Fall",
                     Duration = "6:03",
                     AlbumId = 8,
@@ -290,7 +290,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 25,
+                    Id = 129,
                     Title = "I Don't Know Why",
                     Duration = "3:11",
                     AlbumId = 9,
@@ -298,7 +298,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 26,
+                    Id = 130,
                     Title = "Whatever It Takes",
                     Duration = "3:22",
                     AlbumId = 9,
@@ -306,7 +306,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 27,
+                    Id = 131,
                     Title = "Believer",
                     Duration = "3:25",
                     AlbumId = 9,
@@ -314,7 +314,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 28,
+                    Id = 132,
                     Title = "Walking The Wire",
                     Duration = "3:53",
                     AlbumId = 9,
@@ -322,7 +322,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 29,
+                    Id = 133,
                     Title = "Rise Up",
                     Duration = "3:52",
                     AlbumId = 9,
@@ -330,7 +330,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 30,
+                    Id = 134,
                     Title = "I'll Make It Up To You",
                     Duration = "4:23",
                     AlbumId = 9,
@@ -338,7 +338,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 31,
+                    Id = 135,
                     Title = "Yesturday",
                     Duration = "3:26",
                     AlbumId = 9,
@@ -346,7 +346,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 32,
+                    Id = 136,
                     Title = "Mouth Of The River",
                     Duration = "3:42",
                     AlbumId = 9,
@@ -354,7 +354,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 33,
+                    Id = 137,
                     Title = "Thunder",
                     Duration = "3:08",
                     AlbumId = 9,
@@ -362,7 +362,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 34,
+                    Id = 138,
                     Title = "Star Over",
                     Duration = "3:27",
                     AlbumId = 9,
@@ -370,7 +370,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 35,
+                    Id = 139,
                     Title = "Dancing In The Dark",
                     Duration = "3:54",
                     AlbumId = 9,
@@ -378,7 +378,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 36,
+                    Id = 140,
                     Title = "Natural",
                     Duration = "3:10",
                     AlbumId = 10,
@@ -386,7 +386,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 37,
+                    Id = 141,
                     Title = "Boomerang",
                     Duration = "3:08",
                     AlbumId = 10,
@@ -394,7 +394,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 38,
+                    Id = 142,
                     Title = "Machine",
                     Duration = "3:02",
                     AlbumId = 10,
@@ -402,7 +402,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 39,
+                    Id = 143,
                     Title = "Cool Out",
                     Duration = "3:38",
                     AlbumId = 10,
@@ -410,7 +410,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 40,
+                    Id = 144,
                     Title = "Bad Liar",
                     Duration = "4:21",
                     AlbumId = 10,
@@ -418,7 +418,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 41,
+                    Id = 145,
                     Title = "West Coast",
                     Duration = "3:38",
                     AlbumId = 10,
@@ -426,7 +426,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 42,
+                    Id = 146,
                     Title = "Zero",
                     Duration = "3:31",
                     AlbumId = 10,
@@ -434,7 +434,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 43,
+                    Id = 147,
                     Title = "Bullet In A Gun",
                     Duration = "3:25",
                     AlbumId = 10,
@@ -442,7 +442,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 44,
+                    Id = 148,
                     Title = "Digital",
                     Duration = "3:21",
                     AlbumId = 10,
@@ -450,7 +450,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 45,
+                    Id = 149,
                     Title = "Only",
                     Duration = "3:01",
                     AlbumId = 10,
@@ -458,7 +458,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 46,
+                    Id = 150,
                     Title = "Stuck",
                     Duration = "3:11",
                     AlbumId = 10,
@@ -466,7 +466,7 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
-                    Id = 47,
+                    Id = 151,
                     Title = "Love",
                     Duration = "2:47",
                     AlbumId = 10,
