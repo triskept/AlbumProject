@@ -14,7 +14,6 @@ namespace AlbumProject.Models
         public Album Album { get; set; }
         public int AlbumId { get; set; }
 
-
         public Song()
         {
 
