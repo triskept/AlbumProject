@@ -27,12 +27,41 @@ namespace AlbumProject.Data
             modelBuilder.Entity<Album>().HasData(
                 new Album()
                 {
-                });
+                },
 
             modelBuilder.Entity<Artist>().HasData(
                 new Artist()
                 {
-                });
+                    Id = 1,
+                    Name = "Kid Cudi",
+                    Image = "/images/kidcudi.jpg",
+                    Age = 35,
+                    Hometown = "Cleveland, Ohio"
+                },
+                new Artist()
+                {
+                    Id = 2,
+                    Name = "Imagine Dragons",
+                    Image = "/images/imaginedragons.jpg",
+                    Age = 32,
+                    Hometown = "Las Vegas, Nevada"
+                },
+                new Artist()
+                {
+                    Id = 3,
+                    Name = "Pink Floyd",
+                    Image = "/images/pinkfloyd.jpg",
+                    Age = 54,
+                    Hometown = "London, England"
+                },
+                new Artist()
+                {
+                    Id = 4,
+                    Name = "Alicia Keys",
+                    Image = "/images/alicia-keys.jpg",
+                    Age = 38,
+                    Hometown = "New York, New York"
+                },
 
             modelBuilder.Entity<Song>().HasData(
                 new Song()
