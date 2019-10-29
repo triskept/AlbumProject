@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbumProject", "AlbumProject\AlbumProject.csproj", "{47E13E1A-B7E2-4267-AE35-B7FA57F38FED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbumProject", "AlbumProject\AlbumProject.csproj", "{47E13E1A-B7E2-4267-AE35-B7FA57F38FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbumProject.Tests", "AlbumProject.Tests\AlbumProject.Tests.csproj", "{2B3E6A62-EE16-4C02-8E14-1BD663B375EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{47E13E1A-B7E2-4267-AE35-B7FA57F38FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47E13E1A-B7E2-4267-AE35-B7FA57F38FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47E13E1A-B7E2-4267-AE35-B7FA57F38FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3E6A62-EE16-4C02-8E14-1BD663B375EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3E6A62-EE16-4C02-8E14-1BD663B375EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3E6A62-EE16-4C02-8E14-1BD663B375EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3E6A62-EE16-4C02-8E14-1BD663B375EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

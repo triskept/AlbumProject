@@ -6,7 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AlbumProject.Controllers
 {
-    public class ArtistController : Controller
+    [Route("api/[ArtistController]")]
+    [ApiController]
+
+    public class ArtistController : ControllerBase
     {
         public IActionResult Index()
         {
