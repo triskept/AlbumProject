@@ -186,6 +186,110 @@ namespace AlbumProject.Data
 
                 new Song()
                 {
+                    Id = 12,
+                    Title = "Shots",
+                    Duration = 353,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 13,
+                    Title = "Gold",
+                    Duration = 337,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 14,
+                    Title = "Smoke And Mirrors",
+                    Duration = 421,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 15,
+                    Title = "I'm So Sorry",
+                    Duration = 351,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 16,
+                    Title = "I Bet My Life",
+                    Duration = 312,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 17,
+                    Title = "Polaroid",
+                    Duration = 352,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 18,
+                    Title = "Friction",
+                    Duration = 322,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 19,
+                    Title = "It Comes Back To You",
+                    Duration = 338,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 20,
+                    Title = "Dream",
+                    Duration = 419,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 21,
+                    Title = "Trouble",
+                    Duration = 313,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 22,
+                    Title = "Summer",
+                    Duration = 339,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 23,
+                    Title = "Hopeless Opus",
+                    Duration = 402,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
+                    Id = 24,
+                    Title = "The Fall",
+                    Duration = 603,
+                    AlbumId = 8,
+                },
+
+                new Song()
+                {
                 });
 
         }
