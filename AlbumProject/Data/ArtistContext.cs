@@ -27,7 +27,42 @@ namespace AlbumProject.Data
             modelBuilder.Entity<Album>().HasData(
                 new Album()
                 {
+                    Id = 11,
+                    Title = "The Division Bell",
+                    ArtistId = 3,
+                    Image = "/images/The-Division-Bell.jpg",
+                    Label = "EMI Records"
                 },
+
+                new Album()
+                {
+
+                    Id = 12,
+                    Title = "Atom Heart Mother",
+                    ArtistId = 3,
+                    Image = "/images/Atom-Heart-Mother.jpg",
+                    Label = "Harvest Records"
+                },
+
+                new Album()
+                {
+
+                     Id = 13,
+                     Title = "The Final Cut",
+                     ArtistId = 3,
+                     Image = "/images/The-Final-Cut.jpg",
+                     Label = "Harvest Records"
+                },
+
+                new Album()
+                { 
+
+                    Id = 14,
+                    Title = "The Dark Side of the Moon",
+                    ArtistId = 3,
+                    Image = "/images/dark-side-of-moon.jpg",
+                    Label = "Harvest Records"
+                });
 
             modelBuilder.Entity<Artist>().HasData(
                 new Artist()
@@ -61,7 +96,7 @@ namespace AlbumProject.Data
                     Image = "/images/alicia-keys.jpg",
                     Age = 38,
                     Hometown = "New York, New York"
-                },
+                });
 
             modelBuilder.Entity<Song>().HasData(
                 new Song()
