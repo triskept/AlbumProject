@@ -28,21 +28,37 @@ namespace AlbumProject.Data
                 new Album()
                 {
                     Id = 7,
+                    Title = "Night Visions",
+                    ArtistId = 2,
+                    Image ="/images/nightvisions.jpg",
+                    Label = " Kidinakorner and Interscope Records",
                 },
 
                 new Album()
                 {
-                    Id = 7,
+                    Id = 8,
+                    Title = "Smoke + Mirrors",
+                    ArtistId = 2,
+                    Image = "/images/smokemirrors_720.jpg",
+                    Label = " Kidinakorner and Interscope Records",
                 },
 
                 new Album()
                 {
-                    Id = 7,
+                    Id = 9,
+                    Title = "Evolve",
+                    ArtistId = 2,
+                    Image = "/images/evolve.jpg",
+                    Label = " Kidinakorner and Interscope Records",
                 },
 
                 new Album()
                 {
-                    Id = 7,
+                    Id = 10,
+                    Title = "Origins",
+                    ArtistId = 2,
+                    Image = "/images/origins.jfif",
+                    Label = " Kidinakorner and Interscope Records",
                 });
 
             modelBuilder.Entity<Artist>().HasData(
@@ -80,6 +96,94 @@ namespace AlbumProject.Data
                 });
 
             modelBuilder.Entity<Song>().HasData(
+                new Song()
+                {
+                    Id = 1,
+                    Title = "Radioactive",
+                    Duration = 307,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 2,
+                    Title = "Tiptoe",
+                    Duration = 314,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 3,
+                    Title = "It's Time",
+                    Duration = 401,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 4,
+                    Title = "Demons",
+                    Duration = 258,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 5,
+                    Title = "On Top Of The World",
+                    Duration = 310,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 6,
+                    Title = "Amsterdam",
+                    Duration = 402,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 7,
+                    Title = "Hear Me",
+                    Duration = 353,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 8,
+                    Title = "Every Night",
+                    Duration = 336,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 9,
+                    Title = "Bleeding Out",
+                    Duration = 342,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 10,
+                    Title = "Underdog",
+                    Duration = 327,
+                    AlbumId = 7,
+                },
+
+                new Song()
+                {
+                    Id = 11,
+                    Title = "Nothing Left To Say/Rocks",
+                    Duration = 857,
+                    AlbumId = 7,
+                },
+
                 new Song()
                 {
                 });
