@@ -100,7 +100,7 @@ namespace AlbumProject.Data
                 {
                     Id = 1,
                     Title = "Radioactive",
-                    Duration = 307,
+                    Duration = "3:07",
                     AlbumId = 7,
                 },
 
@@ -108,7 +108,7 @@ namespace AlbumProject.Data
                 {
                     Id = 2,
                     Title = "Tiptoe",
-                    Duration = 314,
+                    Duration = "3:14",
                     AlbumId = 7,
                 },
 
@@ -116,7 +116,7 @@ namespace AlbumProject.Data
                 {
                     Id = 3,
                     Title = "It's Time",
-                    Duration = 401,
+                    Duration = "4:01",
                     AlbumId = 7,
                 },
 
@@ -124,7 +124,7 @@ namespace AlbumProject.Data
                 {
                     Id = 4,
                     Title = "Demons",
-                    Duration = 258,
+                    Duration = "2:58",
                     AlbumId = 7,
                 },
 
@@ -132,7 +132,7 @@ namespace AlbumProject.Data
                 {
                     Id = 5,
                     Title = "On Top Of The World",
-                    Duration = 310,
+                    Duration = "3:10",
                     AlbumId = 7,
                 },
 
@@ -140,7 +140,7 @@ namespace AlbumProject.Data
                 {
                     Id = 6,
                     Title = "Amsterdam",
-                    Duration = 402,
+                    Duration = "4:02",
                     AlbumId = 7,
                 },
 
@@ -148,7 +148,7 @@ namespace AlbumProject.Data
                 {
                     Id = 7,
                     Title = "Hear Me",
-                    Duration = 353,
+                    Duration = "3:53",
                     AlbumId = 7,
                 },
 
@@ -156,7 +156,7 @@ namespace AlbumProject.Data
                 {
                     Id = 8,
                     Title = "Every Night",
-                    Duration = 336,
+                    Duration = "3:36",
                     AlbumId = 7,
                 },
 
@@ -164,7 +164,7 @@ namespace AlbumProject.Data
                 {
                     Id = 9,
                     Title = "Bleeding Out",
-                    Duration = 342,
+                    Duration = "3:42",
                     AlbumId = 7,
                 },
 
@@ -172,7 +172,7 @@ namespace AlbumProject.Data
                 {
                     Id = 10,
                     Title = "Underdog",
-                    Duration = 327,
+                    Duration = "3:27",
                     AlbumId = 7,
                 },
 
@@ -180,7 +180,7 @@ namespace AlbumProject.Data
                 {
                     Id = 11,
                     Title = "Nothing Left To Say/Rocks",
-                    Duration = 857,
+                    Duration = "8:57",
                     AlbumId = 7,
                 },
 
@@ -188,7 +188,7 @@ namespace AlbumProject.Data
                 {
                     Id = 12,
                     Title = "Shots",
-                    Duration = 353,
+                    Duration = "3:53",
                     AlbumId = 8,
                 },
 
@@ -196,7 +196,7 @@ namespace AlbumProject.Data
                 {
                     Id = 13,
                     Title = "Gold",
-                    Duration = 337,
+                    Duration = "3:37",
                     AlbumId = 8,
                 },
 
@@ -204,7 +204,7 @@ namespace AlbumProject.Data
                 {
                     Id = 14,
                     Title = "Smoke And Mirrors",
-                    Duration = 421,
+                    Duration = "4:21",
                     AlbumId = 8,
                 },
 
@@ -212,7 +212,7 @@ namespace AlbumProject.Data
                 {
                     Id = 15,
                     Title = "I'm So Sorry",
-                    Duration = 351,
+                    Duration = "3:51",
                     AlbumId = 8,
                 },
 
@@ -220,7 +220,7 @@ namespace AlbumProject.Data
                 {
                     Id = 16,
                     Title = "I Bet My Life",
-                    Duration = 312,
+                    Duration = "3:12",
                     AlbumId = 8,
                 },
 
@@ -228,7 +228,7 @@ namespace AlbumProject.Data
                 {
                     Id = 17,
                     Title = "Polaroid",
-                    Duration = 352,
+                    Duration = "3:52",
                     AlbumId = 8,
                 },
 
@@ -236,7 +236,7 @@ namespace AlbumProject.Data
                 {
                     Id = 18,
                     Title = "Friction",
-                    Duration = 322,
+                    Duration = "3:22",
                     AlbumId = 8,
                 },
 
@@ -244,7 +244,7 @@ namespace AlbumProject.Data
                 {
                     Id = 19,
                     Title = "It Comes Back To You",
-                    Duration = 338,
+                    Duration = "3:38",
                     AlbumId = 8,
                 },
 
@@ -252,7 +252,7 @@ namespace AlbumProject.Data
                 {
                     Id = 20,
                     Title = "Dream",
-                    Duration = 419,
+                    Duration = "4:19",
                     AlbumId = 8,
                 },
 
@@ -260,7 +260,7 @@ namespace AlbumProject.Data
                 {
                     Id = 21,
                     Title = "Trouble",
-                    Duration = 313,
+                    Duration = "3:13",
                     AlbumId = 8,
                 },
 
@@ -268,7 +268,7 @@ namespace AlbumProject.Data
                 {
                     Id = 22,
                     Title = "Summer",
-                    Duration = 339,
+                    Duration = "3:39",
                     AlbumId = 8,
                 },
 
@@ -276,7 +276,7 @@ namespace AlbumProject.Data
                 {
                     Id = 23,
                     Title = "Hopeless Opus",
-                    Duration = 402,
+                    Duration = "4:02",
                     AlbumId = 8,
                 },
 
@@ -284,12 +284,192 @@ namespace AlbumProject.Data
                 {
                     Id = 24,
                     Title = "The Fall",
-                    Duration = 603,
+                    Duration = "6:03",
                     AlbumId = 8,
                 },
 
                 new Song()
                 {
+                    Id = 25,
+                    Title = "I Don't Know Why",
+                    Duration = "3:11",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 26,
+                    Title = "Whatever It Takes",
+                    Duration = "3:22",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 27,
+                    Title = "Believer",
+                    Duration = "3:25",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 28,
+                    Title = "Walking The Wire",
+                    Duration = "3:53",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 29,
+                    Title = "Rise Up",
+                    Duration = "3:52",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 30,
+                    Title = "I'll Make It Up To You",
+                    Duration = "4:23",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 31,
+                    Title = "Yesturday",
+                    Duration = "3:26",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 32,
+                    Title = "Mouth Of The River",
+                    Duration = "3:42",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 33,
+                    Title = "Thunder",
+                    Duration = "3:08",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 34,
+                    Title = "Star Over",
+                    Duration = "3:27",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 35,
+                    Title = "Dancing In The Dark",
+                    Duration = "3:54",
+                    AlbumId = 9,
+                },
+
+                new Song()
+                {
+                    Id = 36,
+                    Title = "Natural",
+                    Duration = "3:10",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 37,
+                    Title = "Boomerang",
+                    Duration = "3:08",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 38,
+                    Title = "Machine",
+                    Duration = "3:02",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 39,
+                    Title = "Cool Out",
+                    Duration = "3:38",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 40,
+                    Title = "Bad Liar",
+                    Duration = "4:21",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 41,
+                    Title = "West Coast",
+                    Duration = "3:38",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 42,
+                    Title = "Zero",
+                    Duration = "3:31",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 43,
+                    Title = "Bullet In A Gun",
+                    Duration = "3:25",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 44,
+                    Title = "Digital",
+                    Duration = "3:21",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 45,
+                    Title = "Only",
+                    Duration = "3:01",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 46,
+                    Title = "Stuck",
+                    Duration = "3:11",
+                    AlbumId = 10,
+                },
+
+                new Song()
+                {
+                    Id = 47,
+                    Title = "Love",
+                    Duration = "2:47",
+                    AlbumId = 10,
                 });
 
         }
