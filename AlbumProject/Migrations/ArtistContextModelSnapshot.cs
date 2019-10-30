@@ -382,7 +382,7 @@ namespace AlbumProject.Migrations
                         new { Id = 273, AlbumId = 20, Duration = "2:39", Title = "Girl Can't Be Herself" },
                         new { Id = 274, AlbumId = 20, Duration = "0:25", Title = "You Glow (interlude)" },
                         new { Id = 275, AlbumId = 20, Duration = "4:35", Title = "More than We Know" },
-                        new { Id = 276, AlbumId = 20, Duration = "2:47", Title = "Where Do We Begin Now" },
+                        new { Id = 276, AlbumId = 20, Duration = "2:47", Title = "Where Do We Begin Now" }, 
                         new { Id = 277, AlbumId = 20, Duration = "4:22", Title = "Holy War" }
                     );
                 });
