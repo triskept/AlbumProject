@@ -16,7 +16,6 @@ namespace AlbumProject.Models
 
         public Song()
         {
-
         }
     }
 }
