@@ -13,7 +13,7 @@ namespace AlbumProject.Models
         public string Hometown { get; set; }
         public int Id { get; set; }
 
-        ICollection<Album> Albums { get; set; }
+        public ICollection<Album> Albums { get; set; }
 
         public Artist()
         {

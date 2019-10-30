@@ -1,5 +1,6 @@
 html{
     font-family: sans-serif;
+    background-image: url("/images/coffeeshop.jfif")
 }
 #grid{
     display: grid;
