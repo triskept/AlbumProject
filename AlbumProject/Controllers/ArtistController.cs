@@ -11,9 +11,9 @@ namespace AlbumProject.Controllers
 
     public class ArtistController : ControllerBase
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
     }
 }

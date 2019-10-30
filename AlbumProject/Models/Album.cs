@@ -12,7 +12,7 @@ namespace AlbumProject.Models
         public string Image { get; set; }
         public string Label { get; set; }
 
-        public Artist Artist { get; set; }
+        public virtual Artist Artist { get; set; }
         public int ArtistId { get; set; }
 
         ICollection<Song> Songs { get; set; }
