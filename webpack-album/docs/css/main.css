@@ -6,8 +6,8 @@
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 html{
-    font-family: sans-serif;
-    background-image: url("/images/coffeeshop.jfif");
+    font-family: 'Kalam',sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.698),rgb(0, 0, 0, 0.698)) ,url("/images/coffeeshop.jfif");
     background-size: cover;
     background-position: center;
 }
@@ -47,7 +47,8 @@ nav a:hover{
     text-align: center;
     border: 3px solid var(--light);
     box-shadow: var(--shadow);
-    background-color: grey;
+    color: var(--light);
+    /* background-color: grey; */
 }
 /* end of top page */
 /* Body of page */
@@ -67,7 +68,8 @@ nav a:hover{
     text-align:center;
 }
 #artists, #albums, #songs{
-    background-color: grey;
+    /* background-color: grey; */
+    color: white;
     box-shadow: var(--shadow);
     border: 3px solid var(--light);
     padding: 1.5em 2rem;
@@ -76,9 +78,9 @@ nav a:hover{
     position:relative;
     padding: 10px 20px;
     text-decoration: none;
-    border: 1px solid #000;
+    border: 1px solid white;
     display: inline-block;
-    color: rgb(0, 0, 0);
+    color:white;
     transition:0.5s;
     transform: translate(-40px);
     opacity: 0;
@@ -92,21 +94,26 @@ nav a:hover{
 /* End of 3 pages grid */
 /* Featured Album grid */
 #featured{
-    display: grid;
+    /* display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 5%;
+    grid-template-columns: repeat(2, 1fr); */
+    margin-top: 3%;
     text-align: center;
 } 
-#description, #featuredimg{
-    background-color: grey;
-    box-shadow: var(--shadow);
-    border: 3px solid var(--light);
-    padding: 1.5em 2rem;
-}
 #description{
-    margin: auto 0;
-    max-height: 150px;
+    margin: 0 auto;
+    color: var(--light);
+    max-height: 75px;
+    max-width: 250px;
+}
+#description h4, #description h5{
+    /* border: 2px solid var(--light); */
+}
+#featuredimg{
+    /* box-shadow: var(--shadow); */
+    /* border: 3px solid var(--light); */
+    color: white;
+    padding: 1.5em 2rem;
 }
 #featuredimg img{
     border: 3px solid var(--light);   
@@ -116,7 +123,8 @@ nav a:hover{
 /* footer */
 footer h4{
     text-align: center;
-    background-color: grey;
+    color: var(--light);
+    /* background-color: grey; */
     border: 2px solid var(--light);
     box-shadow: var(--shadow);
 }

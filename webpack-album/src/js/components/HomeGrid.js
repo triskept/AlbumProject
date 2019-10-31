@@ -19,13 +19,13 @@ export default function HomeGrid(){
     </section>
 
     <section id="featured">
-        <div id="description">
-            <h4>Dark Side Of The Moon</h4>
-            <h5><em>Pink Floyd</em></h5>
-        </div>
         <div id="featuredimg">
             <h2>Featured Album</h2>
             <img src="/images/dark-side-of-moon.jpg"></img>
+        </div>
+        <div id="description">
+            <h4>Dark Side Of The Moon</h4>
+            <h5><em>Pink Floyd</em></h5>
         </div>
     </section>
 `
