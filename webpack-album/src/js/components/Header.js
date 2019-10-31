@@ -1,7 +1,6 @@
 export default function Header(){
     return `
-    <h1>Welcome to Scooffee's</h1>
-
-    <h2>Check out our extensive record collection</h2>
+    <h1>Scooffee's</h1>
+    <h2>Extensive Record Collection</h2>
     `
 }

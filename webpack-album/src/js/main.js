@@ -3,16 +3,17 @@ import Footer from "./components/Footer"
 import Nav from "./components/Nav"
 import HomeGrid from "./components/HomeGrid"
 
-
 export default() => {
     pageBuild1()
 }
 
 function pageBuild1(){
+    // nav()
     header()
     homegrid()
     footer()
 }
+
 function header(){
     const header = document.getElementById("header")
     header.innerHTML = Header()    
