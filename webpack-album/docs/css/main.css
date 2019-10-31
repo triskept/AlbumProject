@@ -3,6 +3,7 @@
     --primary: #ddd;
     --dark: #333;
     --light: #fff;
+    --accent: #c97de9;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 html{
@@ -19,11 +20,9 @@ nav ul {
     list-style: none;
     grid-template-columns: repeat(4, 1fr);
 }
-
 nav li{
     border: 3px solid var(--light);
 }
-    
 nav a {
      background: grey;
      display: block;
@@ -35,12 +34,10 @@ nav a {
     font-size: 1.1rem;
     box-shadow: var(--shadow);
 }
-
 nav a:hover{
     background: var(--dark);
     color: var(--light);
 }
-
 #header{
     max-width: 400px;
     margin: 5% auto;
@@ -48,7 +45,6 @@ nav a:hover{
     border: 3px solid var(--light);
     box-shadow: var(--shadow);
     color: var(--light);
-    /* background-color: grey; */
 }
 /* end of top page */
 /* Body of page */
@@ -66,10 +62,10 @@ nav a:hover{
 }
 #grid h3{
     text-align:center;
+    color: var(--light);
 }
 #artists, #albums, #songs{
-    /* background-color: grey; */
-    color: white;
+    color: var(--accent);
     box-shadow: var(--shadow);
     border: 3px solid var(--light);
     padding: 1.5em 2rem;
@@ -80,7 +76,7 @@ nav a:hover{
     text-decoration: none;
     border: 1px solid white;
     display: inline-block;
-    color:white;
+    color:var(--accent);
     transition:0.5s;
     transform: translate(-40px);
     opacity: 0;
@@ -92,11 +88,8 @@ nav a:hover{
     visibility: visible;
 }
 /* End of 3 pages grid */
-/* Featured Album grid */
+/* Featured Album */
 #featured{
-    /* display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr); */
     margin-top: 3%;
     text-align: center;
 } 
@@ -106,13 +99,12 @@ nav a:hover{
     max-height: 75px;
     max-width: 250px;
 }
-#description h4, #description h5{
-    /* border: 2px solid var(--light); */
+#decription h3, #description h4{
+    border: 0;
+    margin: -25px;
 }
 #featuredimg{
-    /* box-shadow: var(--shadow); */
-    /* border: 3px solid var(--light); */
-    color: white;
+    color: var(--light);
     padding: 1.5em 2rem;
 }
 #featuredimg img{
@@ -121,7 +113,7 @@ nav a:hover{
 /* End of Featured Album grid */
 /* End of body */
 /* footer */
-footer h4{
+footer h6{
     text-align: center;
     color: var(--light);
     /* background-color: grey; */
@@ -131,5 +123,5 @@ footer h4{
 footer{
     max-width: 200px;
     padding: 0;
-    margin: 5% auto;
+    margin: 10% auto;
 }

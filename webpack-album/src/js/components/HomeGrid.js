@@ -24,8 +24,8 @@ export default function HomeGrid(){
             <img src="/images/dark-side-of-moon.jpg"></img>
         </div>
         <div id="description">
-            <h4>Dark Side Of The Moon</h4>
-            <h5><em>Pink Floyd</em></h5>
+            <h3>Dark Side Of The Moon</h3>
+            <h4><em>Pink Floyd</em></h4>
         </div>
     </section>
 `

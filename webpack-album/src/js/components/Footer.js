@@ -1,5 +1,5 @@
 export default function Footer(){
     return `
-    <h4>&copy; Mighty Sunbuns 2019</h4>
+    <h6>&copy; Mighty Sunbuns 2019</h6>
     `
 }
