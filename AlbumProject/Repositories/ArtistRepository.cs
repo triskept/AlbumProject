@@ -1,5 +1,6 @@
 ﻿using AlbumProject.Data;
 using AlbumProject.Models;
+using AlbumProject.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

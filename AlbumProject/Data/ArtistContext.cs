@@ -17,15 +17,13 @@ namespace AlbumProject.Data
         {
             var connectionString = "Server=(localdb)\\mssqllocaldb;Database=ArtistDB;Trusted_Connection=True;";
 
-            optionsBuilder.UseSqlServer(connectionString)
-            .UseLazyLoadingProxies();
+            optionsBuilder.UseSqlServer(connectionString);
+            //.UseLazyLoadingProxies();
 
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
-
 
             modelBuilder.Entity<Album>().HasData(
 
