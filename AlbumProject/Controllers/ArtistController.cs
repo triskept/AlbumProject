@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AlbumProject.Data;
 using AlbumProject.Models;
+using AlbumProject.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,33 +14,33 @@ namespace AlbumProject.Controllers
     [ApiController]
     public class ArtistController : ControllerBase
     {
-        private ArtistContext db;
+        private IRepository<Artist> artistRepo;
 
-        public ArtistController(ArtistContext db)
+        public ArtistController(IRepository<Artist> artistRepo)
         {
-            this.db = db;
+            this.artistRepo = artistRepo;
         }
-
-        //public ActionResult<IEnumerable<Artist>> all;
 
         // GET: api/Artist
         [HttpGet]
-        public ActionResult<IEnumerable<Artist>> Get()
+        public IEnumerable<Artist> Get()
         {
-            return db.Artists;
+            return artistRepo.GetAll();
         }
 
         // GET: api/Artist/5
-        //[HttpGet("{id}")]
-        //public ActionResult<Artist> Get(int id)
-        //{
-        //    return ;
-        //}
+        [HttpGet("{id}")]
+        public ActionResult<string> Get(int id)
+        {
+            return "artist";
+        }
 
         // POST: api/Artist
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IEnumerable<Artist> Post([FromBody] Artist artist)
         {
+            artistRepo.Create(artist);
+            return artistRepo.GetAll();
         }
 
         // PUT: api/Artist/5
