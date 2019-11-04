@@ -2,15 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AlbumProject.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlbumProject.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/song")]
     [ApiController]
     public class SongController : ControllerBase
     {
+        private ArtistContext db;
+
+        public SongController(ArtistContext db)
+        {
+            this.db = db;
+        }
+
         // GET: api/Song
         [HttpGet]
         public IEnumerable<string> Get()

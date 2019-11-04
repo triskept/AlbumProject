@@ -2,28 +2,39 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AlbumProject.Data;
+using AlbumProject.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlbumProject.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/artist")]
     [ApiController]
     public class ArtistController : ControllerBase
     {
+        private ArtistContext db;
+
+        public ArtistController(ArtistContext db)
+        {
+            this.db = db;
+        }
+
+        //public ActionResult<IEnumerable<Artist>> all;
+
         // GET: api/Artist
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Artist>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return db.Artists;
         }
 
         // GET: api/Artist/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
+        //[HttpGet("{id}")]
+        //public ActionResult<Artist> Get(int id)
+        //{
+        //    return ;
+        //}
 
         // POST: api/Artist
         [HttpPost]
