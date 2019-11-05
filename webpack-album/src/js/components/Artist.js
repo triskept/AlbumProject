@@ -5,10 +5,10 @@ export default function Artist(artists) {
       .map(artist => {
         return `
              <li>
+                <img src=${artist.image}></img>
                 <h3>${artist.name}</h3>
-                <h4>${artist.age}</h4>
-                <h4>${artist.hometown}</h4>
-                <h4>${artist.image}</h4>
+                <h5>Age: ${artist.age}</h5>
+                <h5>Hometown: ${artist.hometown}</h5>
              </li>
         `;
       })

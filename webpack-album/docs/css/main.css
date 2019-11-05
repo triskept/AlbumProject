@@ -180,36 +180,62 @@ html{
     color: var(--accent);
     box-shadow: var(--shadow);
     border: 3px solid var(--light);
-    padding: 1.5em 2rem;
+    padding: .5em 2rem;
 }
 #artistbutton, #albumbutton, #songbutton{
     color: var(--accent);
     box-shadow: var(--shadow);
-    border: 3px solid var(--light);
-    padding: 1.5em 2rem;
+    border: 2px solid var(--accent);
+    /* padding: .75rem .5rem; */
+    width: 100px;
+    margin: auto;
 }
 #artistbutton a, #albumbutton a, #songbutton a{
     position:relative;
     padding: 10px 20px;
     text-decoration: none;
-    border: 1px solid var(--light);
+    /* border: 1px solid var(--light); */
     display: inline-block;
-    color:var(--accent);
+    color:var(--light);
     transition:0.5s;
-    transform: translate(-40px);
+    /* transform: translate(-40px);
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden; */
 }
 #artistbutton:hover a, #albumbutton:hover a, #songbutton:hover a{
-    transform: translateY(0);
+    /* transform: translateY(0);
     opacity: 1;
-    visibility: visible;
+    visibility: visible; */
+    transform: scale(1.25);
 }
 /* End of 3 pages grid */
-
+/* app display */
 #app{
     color: white;
 }
+#app li{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px auto;
+    border: 3px solid var(--light);
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+#app li img{
+    max-height: 200px;
+    max-width: 200px;
+    border: 2px solid var(--accent);
+}
+#app li h3, #app li h5{
+    margin: auto;
+}
+.add-artist {
+    text-align: center;
+    margin: auto;
+    border: 3px solid var(--accent);
+    width: 200px;
+}
+/* end app display */
 /* Featured Album */
 #featured{
     margin-top: 3%;
