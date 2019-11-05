@@ -48,7 +48,7 @@ function displayArtist(){
     });
 
     const app = document.querySelector("#app");
-app.addEventListener("click", function(){
+    app.addEventListener("click", function(){
     if(event.target.classList.contains("add-artist_submit")){
         const addArtist = event.target.parentElement.querySelector(
             ".add-artist_artistName"        
@@ -78,6 +78,28 @@ function displayAlbum(){
             console.log(albums);
         });
     });
+
+    const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+    if(event.target.classList.contains("add-album_submit")){
+        const addAlbum = event.target.parentElement.querySelector(
+            ".add-album_albumTitle"        
+        ).value;
+
+        console.log(addAlbum);
+        apiActions.postRequest
+        ("https://localhost:44342/api/album", 
+        {
+            title: addAlbum,
+            artistId: 4
+        },
+        albums => {
+            console.log(albums);
+            document.querySelector("#app").innerHTML = Album(albums);
+        }
+        )    
+    }
+});
 }
 
 
