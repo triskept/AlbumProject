@@ -172,7 +172,7 @@ namespace AlbumProject.Data
                    Id = 18,
                    Title = "The Element of Freedom",
                    ArtistId = 4,
-                   Image = "/images/elementoffreedom.jpg",
+                   Image = "/images/elementoffreedom.png",
                    Label = "J"
                },
                new Album()
@@ -180,7 +180,7 @@ namespace AlbumProject.Data
                    Id = 19,
                    Title = "Girl on Fire",
                    ArtistId = 4,
-                   Image = "/images/girlonfire.jpg",
+                   Image = "/images/girlonfire.png",
                    Label = "RCA"
                },
                new Album()
@@ -188,7 +188,7 @@ namespace AlbumProject.Data
                    Id = 20,
                    Title = "Here",
                    ArtistId = 4,
-                   Image = "/images/here.jpg",
+                   Image = "/images/here.png",
                    Label = "RCA"
                });
 
