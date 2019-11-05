@@ -46,6 +46,28 @@ function displayArtist(){
             console.log(artists);
         });
     });
+
+    const app = document.querySelector("#app");
+app.addEventListener("click", function(){
+    if(event.target.classList.contains("add-artist_submit")){
+        const addArtist = event.target.parentElement.querySelector(
+            ".add-artist_artistName"        
+        ).value;
+
+        console.log(addArtist);
+        apiActions.postRequest
+        ("https://localhost:44342/api/artist", 
+        {
+            name: addArtist
+        },
+        artists => {
+            console.log(artists);
+            document.querySelector("#app").innerHTML = Artist(artists);
+        }
+        )    
+    }
+});
+
 }
 
 function displayAlbum(){
