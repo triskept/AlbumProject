@@ -4,17 +4,26 @@ export default function HomeGrid(){
         <div id="artists">
             <i class="fas fa-guitar fa-5x"></i>
             <h3>Artists</h3>
-            <a id="artistbrowse" href="">Browse</a>
         </div>
         <div id="albums">
         <i class="fas fa-record-vinyl fa-5x"></i>
             <h3>Albums</h3>
-            <a id="albumbrowse" href="">Browse</a>
         </div>
         <div id="songs">
             <i class="fas fa-music fa-5x"></i>
             <h3>Songs</h3>
-            <a id="songbrowse" href="">Browse</a>
+        </div>
+    </section>
+
+    <section id="grid2">
+        <div id="artistbutton">
+            <a id="artistbrowse">Browse</a>
+        </div>
+        <div id="albumbutton">
+            <a id="albumbrowse">Browse</a>
+        </div>
+        <div id="songbutton">
+            <a id="songbrowse">Browse</a>
         </div>
     </section>
 

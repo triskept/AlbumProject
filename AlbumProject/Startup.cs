@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AlbumProject.Data;
+using AlbumProject.Models;
+using AlbumProject.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,8 +29,18 @@ namespace AlbumProject
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }));
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<ArtistContext>();
+            services.AddScoped<IRepository<Artist>, ArtistRepository>();
+            services.AddScoped<IRepository<Album>, AlbumRepository>();
+            services.AddScoped<IRepository<Song>, SongRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +54,8 @@ namespace AlbumProject
             {
                 app.UseHsts();
             }
+
+            app.UseCors("MyPolicy");
             app.UseHttpsRedirection();
             app.UseMvc();
             app.UseStaticFiles();
