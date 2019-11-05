@@ -1,5 +1,4 @@
 export default function Artist(artists) {
-alert(artists)
     return `
     <ul> 
     ${artists
@@ -10,7 +9,7 @@ alert(artists)
                 <h4>${artist.age}</h4>
                 <h4>${artist.hometown}</h4>
                 <h4>${artist.image}</h4>
-            </li>
+             </li>
         `;
       })
       .join("")}

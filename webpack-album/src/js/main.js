@@ -5,12 +5,12 @@ import HomeGrid from "./components/HomeGrid"
 import Artist from "./components/Artist"
 import apiActions from "./api/apiActions"
 
-export default() => {
-    pageBuild1()
+export default () => {
+    pageBuild()
 }
 
-function pageBuild1(){
-    // nav()
+function pageBuild(){
+    nav()
     header();
     homegrid();
     footer();

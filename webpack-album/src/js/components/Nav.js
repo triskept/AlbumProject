@@ -1,12 +1,19 @@
 export default function Nav(){
     return `
-    <nav class='navbar'>
-        <ul>
-            <li class="nav_home"><a href=""><strong>Home</strong></a></li>
-            <li class="nav_values"><a href=""><strong>Artists</strong></a></li>
-            <li class="nav_todos"><a href=""><strong>Albums</strong></a></li>
-            <li class="nav_todos"><a href=""><strong>Songs</strong></a></li>
-        </ul>
-    </nav>
-`
+    <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#Home"><strong>Home</strong></a></li>
+            <li><a href="#Artists"><strong>Artists</strong></a></li>
+            <li><a href="#Albums"><strong>Albums</strong></a></li>
+            <li><a href="#Songs"><strong>Songs</strong></a></li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+  </div>`
 }
