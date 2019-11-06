@@ -85,13 +85,15 @@ function displayAlbum(){
         const addAlbum = event.target.parentElement.querySelector(
             ".add-album_albumTitle"        
         ).value;
-
+        const addAlbumArtist = event.target.parentElement.querySelector(
+            ".add-album_artist"
+        ).value;
         console.log(addAlbum);
         apiActions.postRequest
         ("https://localhost:44342/api/album", 
         {
             title: addAlbum,
-            artistId: 4
+            artistId: addAlbumArtist
         },
         albums => {
             console.log(albums);
