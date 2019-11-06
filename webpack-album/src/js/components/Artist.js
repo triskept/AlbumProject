@@ -9,7 +9,8 @@ export default function Artist(artists) {
                 <h3>${artist.name}</h3>
                 <h5>Age: ${artist.age}</h5>
                 <h5>Hometown: ${artist.hometown}</h5>
-                <input class="artist__id" type="hidden" value="${artist.id}">
+                <p><input class="artist__id" type="hidden" value="${artist.id}"></p>
+                <button class="edit-artist__submit">Edit</button>
                 <button class="delete-artist__submit">Delete</button>
                 </li>
         `;

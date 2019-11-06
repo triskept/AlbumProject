@@ -13,5 +13,6 @@ namespace AlbumProject.Repositories
         T GetById(int id);
         void Create(T artist);
         void Delete(T artist);
+        void Update(T artist);
     }
 }

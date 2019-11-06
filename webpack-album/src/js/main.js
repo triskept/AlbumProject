@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import Nav from "./components/Nav"
 import HomeGrid from "./components/HomeGrid"
 import Artist from "./components/Artist"
+import EditArtist from "./components/EditArtist"
 import Album from "./components/Album"
 import Song from "./components/Song"
 import apiActions from "./api/apiActions"
@@ -78,6 +79,48 @@ app.addEventListener("click", function() {
                 app.innerHTML = Artist(artists);
             }
             )       
+    }
+});
+
+app.addEventListener("click", function() {
+    if(event.target.classList.contains("edit-artist__submit")) {
+        const artistId = event.target.parentElement.querySelector(".artist__id")
+        .value;
+        console.log("edit" + artistId);
+        apiActions.getRequest("https://localhost:44342/api/artist", 
+            
+            artistEDIT => {
+                app.innerHTML = EditArtist(artistEDIT);
+                    }
+        )        
+    }
+});
+
+app.addEventListener("click", function() {
+    if(event.target.classList.contains("update-artist__submit")) {
+    const artistId = event.target.parentElement.querySelector(
+        ".update-artist__id"
+    ).value;
+    const artistName = event.target.parentElement.querySelector(
+        ".update-artist__name"
+    ).value;
+    console.log(artistId);
+    console.log(artistName);
+
+    const artistData = {
+        id: artistId,
+        name: artistName
+    };
+
+    
+    apiActions.putRequest(
+        `https://localhost:44342/api/artist/${artistId}`,
+    artistData,
+    artists => {
+        document.querySelector("#app").innerHTML = Artist(artists);
+    }
+    
+    )
     }
 });
 
