@@ -51,8 +51,11 @@ namespace AlbumProject.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IEnumerable<Artist> Delete(int id)
         {
+            var deleteArtist = artistRepo.GetById(id);
+            artistRepo.Delete(deleteArtist);
+            return artistRepo.GetAll();
         }
     }
 }

@@ -67,6 +67,20 @@ function displayArtist(){
     }
 });
 
+app.addEventListener("click", function() {
+    if(event.target.classList.contains("delete-artist__submit")) {
+        const artistId = event.target.parentElement.querySelector(".artist__id")
+        .value;
+        console.log("delete" + artistId);
+        apiActions.deleteRequest(
+            `https://localhost:44342/api/artist/${artistId}`,
+            artists => {
+                app.innerHTML = Artist(artists);
+            }
+            )       
+    }
+});
+
 }
 function displayAlbum(){
     const albumButton = document.querySelector("#albumbrowse");
