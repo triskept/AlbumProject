@@ -7,7 +7,7 @@ export default function Album(albums) {
              <li>
                 <img src=${album.image}></img>
                 <h3>${album.title}</h3>
-                <h5>Label: ${album.label}</h5>               
+                <h5>Label: ${album.label}</h5>  
              </li>
         `;
       })
