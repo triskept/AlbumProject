@@ -45,6 +45,28 @@ function displayArtist(){
             console.log(artists);
         });
     });
+
+    const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+    if(event.target.classList.contains("add-artist_submit")){
+        const addArtist = event.target.parentElement.querySelector(
+            ".add-artist_artistName"        
+        ).value;
+
+        console.log(addArtist);
+        apiActions.postRequest
+        ("https://localhost:44342/api/artist", 
+        {
+            name: addArtist
+        },
+        artists => {
+            console.log(artists);
+            document.querySelector("#app").innerHTML = Artist(artists);
+        }
+        )    
+    }
+});
+
 }
 function displayAlbum(){
     const albumButton = document.querySelector("#albumbrowse");
@@ -54,6 +76,28 @@ function displayAlbum(){
             console.log(albums);
         });
     });
+
+    const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+    if(event.target.classList.contains("add-album_submit")){
+        const addAlbum = event.target.parentElement.querySelector(
+            ".add-album_albumTitle"        
+        ).value;
+
+        console.log(addAlbum);
+        apiActions.postRequest
+        ("https://localhost:44342/api/album", 
+        {
+            title: addAlbum,
+            artistId: 4
+        },
+        albums => {
+            console.log(albums);
+            document.querySelector("#app").innerHTML = Album(albums);
+        }
+        )    
+    }
+});
 }
 function displaySong(){
     const songButton = document.querySelector("#songbrowse");
@@ -63,4 +107,26 @@ function displaySong(){
             console.log(songs);
         });
     });
+
+    const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+    if(event.target.classList.contains("add-song_submit")){
+        const addSong = event.target.parentElement.querySelector(
+            ".add-song_songTitle"        
+        ).value;
+
+        console.log(addSong);
+        apiActions.postRequest
+        ("https://localhost:44342/api/song", 
+        {
+            title: addSong,
+           albumId: 4
+        },
+        songs => {
+            console.log(songs);
+            document.querySelector("#app").innerHTML = Song(songs);
+        }
+        )    
+    }
+});
 }
