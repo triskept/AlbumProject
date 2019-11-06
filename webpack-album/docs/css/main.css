@@ -260,7 +260,7 @@ html{
     text-align: center;
     margin: auto;
     border: 3px solid var(--accent);
-    height: 50px;
+    height: 100px;
     width: 200px;
 }
 /* end app display */

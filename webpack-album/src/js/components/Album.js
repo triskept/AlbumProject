@@ -25,6 +25,7 @@ export default function Album(albums) {
     <option value="3">Pink Floyd</option>
     <option value="4">Alicia Keys</option>
     </select>
+    <input class='add-album_albumLabel' type='text' placeholder='Add A Record Label!'>
     <button class='add-album_submit'>Submit</button>
 </section>
     `;
