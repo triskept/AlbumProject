@@ -4,7 +4,7 @@ export default function Artist(artists) {
     ${artists
       .map(artist => {
         return `
-             <li>
+             <li id="artist">
                 <img src=${artist.image}></img>
                 <h3>${artist.name}</h3>
                 <h5>Age: ${artist.age}</h5>

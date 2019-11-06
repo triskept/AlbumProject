@@ -1,5 +1,6 @@
 export default function Song(songs) {
     return `
+    <section id="songgrid">
     <ul> 
     ${songs
       .map(song => {
@@ -12,7 +13,7 @@ export default function Song(songs) {
       })
       .join("")}
  </ul>
- 
+</section>
 <section class='add-song'>
     <input class='add-song_songTitle' type='text' placeholder='Add A New Song!'>
     <button class='add-song_submit'>Submit</button>

@@ -1,10 +1,12 @@
 export default function Album(albums) {
     return `
-    <ul> 
+
+<section id="albumgrid">    
+<ul> 
     ${albums
       .map(album => {
         return `
-             <li>
+             <li id="album">
                 <img src=${album.image}></img>
                 <h3>${album.title}</h3>
                 <h5>Label: ${album.label}</h5>  
@@ -13,7 +15,8 @@ export default function Album(albums) {
       })
       .join("")}
  </ul>
- 
+ </section>
+
 <section class='add-album'>
     <input class='add-album_albumTitle' type='text' placeholder='Add A New Album!'>
     <select class= 'add-album_artist' name="Artist">

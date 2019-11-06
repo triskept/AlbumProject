@@ -37,7 +37,6 @@ function homegrid(){
     const homegrid = document.getElementById("app")
     homegrid.innerHTML = HomeGrid()    
 }
-
 function displayArtist(){
     const artistButton = document.querySelector("#artistbrowse");
     artistButton.addEventListener("click", function(){
@@ -69,7 +68,6 @@ function displayArtist(){
 });
 
 }
-
 function displayAlbum(){
     const albumButton = document.querySelector("#albumbrowse");
     albumButton.addEventListener("click", function(){
@@ -103,8 +101,6 @@ function displayAlbum(){
     }
 });
 }
-
-
 function displaySong(){
     const songButton = document.querySelector("#songbrowse");
     songButton.addEventListener("click", function(){
@@ -113,4 +109,26 @@ function displaySong(){
             console.log(songs);
         });
     });
+
+    const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+    if(event.target.classList.contains("add-song_submit")){
+        const addSong = event.target.parentElement.querySelector(
+            ".add-song_songTitle"        
+        ).value;
+
+        console.log(addSong);
+        apiActions.postRequest
+        ("https://localhost:44342/api/song", 
+        {
+            title: addSong,
+           albumId: 4
+        },
+        songs => {
+            console.log(songs);
+            document.querySelector("#app").innerHTML = Song(songs);
+        }
+        )    
+    }
+});
 }

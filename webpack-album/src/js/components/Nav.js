@@ -7,10 +7,10 @@ export default function Nav(){
       <div>
         <div>
           <ul>
-            <li><a href="#Home"><strong>Home</strong></a></li>
-            <li><a href="#Artists"><strong>Artists</strong></a></li>
-            <li><a href="#Albums"><strong>Albums</strong></a></li>
-            <li><a href="#Songs"><strong>Songs</strong></a></li>
+            <li><a id="Home"><strong>Home</strong></a></li>
+            <li><a id="Artists"><strong>Artists</strong></a></li>
+            <li><a id="Albums"><strong>Albums</strong></a></li>
+            <li><a id="Songs"><strong>Songs</strong></a></li>
           </ul>
         </div>
       </div> 
