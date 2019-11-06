@@ -37,7 +37,6 @@ function homegrid(){
     const homegrid = document.getElementById("app")
     homegrid.innerHTML = HomeGrid()    
 }
-
 function displayArtist(){
     const artistButton = document.querySelector("#artistbrowse");
     artistButton.addEventListener("click", function(){
@@ -47,7 +46,6 @@ function displayArtist(){
         });
     });
 }
-
 function displayAlbum(){
     const albumButton = document.querySelector("#albumbrowse");
     albumButton.addEventListener("click", function(){
@@ -57,8 +55,6 @@ function displayAlbum(){
         });
     });
 }
-
-
 function displaySong(){
     const songButton = document.querySelector("#songbrowse");
     songButton.addEventListener("click", function(){
