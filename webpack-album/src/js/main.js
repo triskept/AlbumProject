@@ -57,13 +57,15 @@ function displayArtist(){
             ".add-artist_artistAge").value;
         const addArtistHometown = event.target.parentElement.querySelector(
             ".add-artist_artistHome").value;
-
+        const addArtistImage = "./images/photo-g.jfif"
+    
         console.log(addArtist);
         apiActions.postRequest("https://localhost:44342/api/artist", 
         {
             name: addArtist,
             age: addArtistAge,
-            hometown: addArtistHometown
+            hometown: addArtistHometown,
+            image: addArtistImage
         },
         artists => {
             console.log(artists);
@@ -115,7 +117,7 @@ app.addEventListener("click", function() {
         id: artistId,
         name: artistName,
         age: artistAge,
-        home: artistHometown
+        hometown: artistHometown
     };
 
     apiActions.putRequest(
