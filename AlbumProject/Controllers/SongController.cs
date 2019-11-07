@@ -30,9 +30,9 @@ namespace AlbumProject.Controllers
 
         // GET: api/Song/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public Song Get(int id)
         {
-            return "value";
+            return songRepo.GetById(id);
         }
 
         // POST: api/Song
@@ -46,14 +46,19 @@ namespace AlbumProject.Controllers
 
         // PUT: api/Song/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IEnumerable<Song> Put(int id, [FromBody] Song song)
         {
+            songRepo.Update(song);
+            return songRepo.GetAll();
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IEnumerable<Song> Delete(int id)
         {
+            var deleteSong = songRepo.GetById(id);
+            songRepo.Delete(deleteSong);
+            return songRepo.GetAll();
         }
     }
 }

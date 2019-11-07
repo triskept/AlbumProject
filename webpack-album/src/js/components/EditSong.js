@@ -7,7 +7,7 @@ export default function EditSong(songEDIT) {
 
         <section class='update-song'>
         <input class='update-song__title' type='text' value="${songEDIT.title}">
-        <input class='update-song__duration' type='text' value="${songEDIT.label}">
+        <input class='update-song__duration' type='text' value="${songEDIT.duration}">
         <button class='update-song__submit'>Save Changes</button>
         <input class='update-song__id' type='hidden' value="${songEDIT.id}">
         </section>

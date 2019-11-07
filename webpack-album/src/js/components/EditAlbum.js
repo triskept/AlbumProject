@@ -7,7 +7,7 @@ export default function EditAlbum(albumEDIT) {
 
         <section class='update-album'>
         <input class='update-album__title' type='text' value="${albumEDIT.title}">
-        <select class= 'add-album_artist' name="Artist">
+        <select class= 'update-album_artist' name="Artist">
         <option value="1">Kid Cudi</option>
         <option value="2">Imagine Dragons</option>
         <option value="3">Pink Floyd</option>
