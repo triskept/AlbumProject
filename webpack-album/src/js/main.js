@@ -20,6 +20,10 @@ function pageBuild(){
     displayArtist();
     displayAlbum();
     displaySong();
+    displayHome();
+    artistNAV();
+    albumNAV();
+    songNAV();
 }
 
 function header(){
@@ -38,7 +42,43 @@ function homegrid(){
     const homegrid = document.getElementById("app")
     homegrid.innerHTML = HomeGrid()    
 }
+
 //artist functions
+
+function displayHome(){
+    const homeButton = document.querySelector("#Home");
+    homeButton.addEventListener("click", function(){
+        homegrid()
+    });
+}
+function artistNAV(){
+    const navArtist = document.querySelector("#Artists");
+    navArtist.addEventListener("click", function(){
+        apiActions.getRequest("https://localhost:44342/api/artist", artists => {
+            document.querySelector("#app").innerHTML = Artist(artists);
+            console.log(artists);
+    });
+    });
+}
+function albumNAV(){
+    const navAlbum = document.querySelector("#Albums");
+    navAlbum.addEventListener("click", function(){
+        apiActions.getRequest("https://localhost:44342/api/album", albums => {
+            document.querySelector("#app").innerHTML = Album(albums);
+            console.log(albums);
+    });
+    });
+}
+function songNAV(){
+    const navSong = document.querySelector("#Songs");
+    navSong.addEventListener("click", function(){
+        apiActions.getRequest("https://localhost:44342/api/song", songs => {
+            document.querySelector("#app").innerHTML = Song(songs);
+            console.log(songs);
+    });
+    });
+}
+
 function displayArtist(){
     const artistButton = document.querySelector("#artistbrowse");
     artistButton.addEventListener("click", function(){
