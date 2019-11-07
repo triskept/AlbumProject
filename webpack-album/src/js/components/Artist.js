@@ -20,6 +20,8 @@ export default function Artist(artists) {
  
 <section class='add-artist'>
     <input class='add-artist_artistName' type='text' placeholder='Add A New Artist!'>
+    <input class='add-artist_artistAge' type='text' placeholder='Add An Artist Age!'>
+    <input class='add-artist_artistHome' type='text' placeholder='Add An Artist Hometown!'>
     <button class='add-artist_submit'>Submit</button>
 </section>
     `;

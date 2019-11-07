@@ -53,12 +53,20 @@ function displayArtist(){
         const addArtist = event.target.parentElement.querySelector(
             ".add-artist_artistName"        
         ).value;
+        const addArtistAge = event.target.parentElement.querySelector(
+            ".add-artist_artistAge"        
+        ).value;
+        const addArtistHome = event.target.parentElement.querySelector(
+            ".add-artist_artistHome"        
+        ).value;
 
         console.log(addArtist);
         apiActions.postRequest
         ("https://localhost:44342/api/artist", 
         {
-            name: addArtist
+            name: addArtist,
+            age: addArtistAge,
+            home: addArtistHome
         },
         artists => {
             console.log(artists);
@@ -84,10 +92,9 @@ app.addEventListener("click", function() {
 
 app.addEventListener("click", function() {
     if(event.target.classList.contains("edit-artist__submit")) {
-        const artistId = event.target.parentElement.querySelector(".artist__id")
-        .value;
+        const artistId = event.target.parentElement.querySelector(".artist__id").value;
         console.log("edit" + artistId);
-        apiActions.getRequest("https://localhost:44342/api/artist", 
+        apiActions.getRequest(`https://localhost:44342/api/artist/${artistId}`, 
             
             artistEDIT => {
                 app.innerHTML = EditArtist(artistEDIT);
@@ -118,9 +125,7 @@ app.addEventListener("click", function() {
     artistData,
     artists => {
         document.querySelector("#app").innerHTML = Artist(artists);
-    }
-    
-    )
+        })
     }
 });
 
