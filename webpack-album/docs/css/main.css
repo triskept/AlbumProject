@@ -260,7 +260,7 @@ html{
     text-align: center;
     margin: auto;
     border: 3px solid var(--accent);
-    height: 50px;
+    height: 100px;
     width: 200px;
 }
 /* end app display */
@@ -286,6 +286,9 @@ html{
 #featuredimg img{
     border: 3px solid var(--accent);   
 }
+.add-album_artist{
+margin-right: 3rem;
+    }
 /* End of Featured Album grid */
 /* End of body */
 /* footer */
