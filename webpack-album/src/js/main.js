@@ -5,6 +5,7 @@ import HomeGrid from "./components/HomeGrid"
 import Artist from "./components/Artist"
 import EditArtist from "./components/EditArtist"
 import Album from "./components/Album"
+import EditAlbum from "./components/EditAlbum"
 import Song from "./components/Song"
 import apiActions from "./api/apiActions"
 
@@ -43,21 +44,20 @@ function homegrid(){
     homegrid.innerHTML = HomeGrid()    
 }
 
-//artist functions
-
 function displayHome(){
     const homeButton = document.querySelector("#Home");
     homeButton.addEventListener("click", function(){
         homegrid()
     });
 }
+//NAV functions
 function artistNAV(){
     const navArtist = document.querySelector("#Artists");
     navArtist.addEventListener("click", function(){
         apiActions.getRequest("https://localhost:44342/api/artist", artists => {
             document.querySelector("#app").innerHTML = Artist(artists);
             console.log(artists);
-    });
+        });
     });
 }
 function albumNAV(){
@@ -66,7 +66,7 @@ function albumNAV(){
         apiActions.getRequest("https://localhost:44342/api/album", albums => {
             document.querySelector("#app").innerHTML = Album(albums);
             console.log(albums);
-    });
+        });
     });
 }
 function songNAV(){
@@ -75,7 +75,7 @@ function songNAV(){
         apiActions.getRequest("https://localhost:44342/api/song", songs => {
             document.querySelector("#app").innerHTML = Song(songs);
             console.log(songs);
-    });
+        });
     });
 }
 //artist functions
@@ -146,18 +146,14 @@ app.addEventListener("click", function() {
         ".update-artist__age").value;
     const artistHometown = event.target.parentElement.querySelector(
         ".update-artist__home").value;
-            
-    console.log(artistId);
-    console.log(artistName);
-    console.log(artistAge);
-    console.log(artistHometown);
-
-
+    const addArtistImage = "./images/photo-g.jfif"
+     
     const artistData = {
         id: artistId,
         name: artistName,
         age: artistAge,
-        hometown: artistHometown
+        hometown: artistHometown,
+        image: addArtistImage
     };
 
     apiActions.putRequest(
@@ -169,7 +165,7 @@ app.addEventListener("click", function() {
     }
 });
 }
-//ablum functions
+//album functions
 function displayAlbum(){
     const albumButton = document.querySelector("#albumbrowse");
     albumButton.addEventListener("click", function(){
@@ -206,7 +202,58 @@ function displayAlbum(){
         )    
     }
 });
+
+app.addEventListener("click", function() {
+    if(event.target.classList.contains("delete-album__submit")) {
+        const albumId = event.target.parentElement.querySelector(".album__id").value;
+        console.log("delete" + albumId);
+        apiActions.deleteRequest(`https://localhost:44342/api/album/${albumId}`,
+            albums => {
+                app.innerHTML = Album(albums);
+            })       
+    }
+});
+
+app.addEventListener("click", function() {
+    if(event.target.classList.contains("edit-album__submit")) {
+        const albumId = event.target.parentElement.querySelector(".album__id").value;
+        console.log("edit" + albumId);
+        apiActions.getRequest(`https://localhost:44342/api/album/${albumId}`, albumEDIT => {
+                app.innerHTML = EditAlbum(albumEDIT);
+        })        
+    }
+});
+
+app.addEventListener("click", function() {
+    if(event.target.classList.contains("update-album__submit")) {
+    const albumId = event.target.parentElement.querySelector(
+        ".update-album__id").value;
+    const albumTitle = event.target.parentElement.querySelector(
+        ".update-album__title").value;
+    const albumArtist = event.target.parentElement.querySelector(
+        ".update-album__artist").value;
+    const albumLabel = event.target.parentElement.querySelector(
+        ".update-album__label").value;    
+    const addAlbumImage = "./images/photo-g.jfif"
+     
+    const albumData = {
+        id: albumId,
+        title: albumTitle,
+        artistId: albumArtist,
+        label: albumLabel,
+        image: addAlbumImage
+    };
+
+    apiActions.putRequest(
+        `https://localhost:44342/api/artist/${albumId}`,
+    albumData,
+    albums => {
+        document.querySelector("#app").innerHTML = Album(albums);
+        })
+    }
+});
 }
+//song functions
 function displaySong(){
     const songButton = document.querySelector("#songbrowse");
     songButton.addEventListener("click", function(){
@@ -235,6 +282,53 @@ function displaySong(){
             document.querySelector("#app").innerHTML = Song(songs);
         }
         )    
+    }
+});
+app.addEventListener("click", function() {
+    if(event.target.classList.contains("delete-song__submit")) {
+        const songId = event.target.parentElement.querySelector(".song__id").value;
+        console.log("delete" + songId);
+        apiActions.deleteRequest(`https://localhost:44342/api/song/${songId}`,
+            songs => {
+                app.innerHTML = Song(songs);
+            })       
+    }
+});
+
+app.addEventListener("click", function() {
+    if(event.target.classList.contains("edit-song__submit")) {
+        const songId = event.target.parentElement.querySelector(".song__id").value;
+        console.log("edit" + songId);
+        apiActions.getRequest(`https://localhost:44342/api/song/${songId}`, songEDIT => {
+                app.innerHTML = EditSong(songEDIT);
+        })        
+    }
+});
+
+app.addEventListener("click", function() {
+    if(event.target.classList.contains("update-song__submit")) {
+    const songId = event.target.parentElement.querySelector(
+        ".update-song__id").value;
+    const songTitle = event.target.parentElement.querySelector(
+        ".update-song__title").value;
+    const songDuration = event.target.parentElement.querySelector(
+        ".update-song__duration").value;    
+    // const songAlbum = event.target.parentElement.querySelector(
+    //     ".update-song__album").value;
+     
+    const songData = {
+        id: songId,
+        title: songTitle,
+        duration: songDuration
+        // albumId: songArtist,
+    };
+
+    apiActions.putRequest(
+        `https://localhost:44342/api/artist/${songId}`,
+    songData,
+    songs => {
+        document.querySelector("#app").innerHTML = Song(songs);
+        })
     }
 });
 }
