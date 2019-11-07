@@ -30,9 +30,9 @@ namespace AlbumProject.Controllers
 
         // GET: api/Artist/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public Artist Get(int id)
         {
-            return "artist";
+            return artistRepo.GetById(id);
         }
 
         // POST: api/Artist

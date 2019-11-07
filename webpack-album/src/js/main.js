@@ -38,6 +38,7 @@ function homegrid(){
     const homegrid = document.getElementById("app")
     homegrid.innerHTML = HomeGrid()    
 }
+//artist functions
 function displayArtist(){
     const artistButton = document.querySelector("#artistbrowse");
     artistButton.addEventListener("click", function(){
@@ -51,22 +52,18 @@ function displayArtist(){
     app.addEventListener("click", function(){
     if(event.target.classList.contains("add-artist_submit")){
         const addArtist = event.target.parentElement.querySelector(
-            ".add-artist_artistName"        
-        ).value;
+            ".add-artist_artistName").value;
         const addArtistAge = event.target.parentElement.querySelector(
-            ".add-artist_artistAge"        
-        ).value;
-        const addArtistHome = event.target.parentElement.querySelector(
-            ".add-artist_artistHome"        
-        ).value;
+            ".add-artist_artistAge").value;
+        const addArtistHometown = event.target.parentElement.querySelector(
+            ".add-artist_artistHome").value;
 
         console.log(addArtist);
-        apiActions.postRequest
-        ("https://localhost:44342/api/artist", 
+        apiActions.postRequest("https://localhost:44342/api/artist", 
         {
             name: addArtist,
             age: addArtistAge,
-            home: addArtistHome
+            hometown: addArtistHometown
         },
         artists => {
             console.log(artists);
@@ -78,15 +75,12 @@ function displayArtist(){
 
 app.addEventListener("click", function() {
     if(event.target.classList.contains("delete-artist__submit")) {
-        const artistId = event.target.parentElement.querySelector(".artist__id")
-        .value;
+        const artistId = event.target.parentElement.querySelector(".artist__id").value;
         console.log("delete" + artistId);
-        apiActions.deleteRequest(
-            `https://localhost:44342/api/artist/${artistId}`,
+        apiActions.deleteRequest(`https://localhost:44342/api/artist/${artistId}`,
             artists => {
                 app.innerHTML = Artist(artists);
-            }
-            )       
+            })       
     }
 });
 
@@ -94,32 +88,36 @@ app.addEventListener("click", function() {
     if(event.target.classList.contains("edit-artist__submit")) {
         const artistId = event.target.parentElement.querySelector(".artist__id").value;
         console.log("edit" + artistId);
-        apiActions.getRequest(`https://localhost:44342/api/artist/${artistId}`, 
-            
-            artistEDIT => {
+        apiActions.getRequest(`https://localhost:44342/api/artist/${artistId}`, artistEDIT => {
                 app.innerHTML = EditArtist(artistEDIT);
-                    }
-        )        
+        })        
     }
 });
 
 app.addEventListener("click", function() {
     if(event.target.classList.contains("update-artist__submit")) {
     const artistId = event.target.parentElement.querySelector(
-        ".update-artist__id"
-    ).value;
+        ".update-artist__id").value;
     const artistName = event.target.parentElement.querySelector(
-        ".update-artist__name"
-    ).value;
+        ".update-artist__name").value;
+    const artistAge = event.target.parentElement.querySelector(
+        ".update-artist__age").value;
+    const artistHometown = event.target.parentElement.querySelector(
+        ".update-artist__home").value;
+            
     console.log(artistId);
     console.log(artistName);
+    console.log(artistAge);
+    console.log(artistHometown);
+
 
     const artistData = {
         id: artistId,
-        name: artistName
+        name: artistName,
+        age: artistAge,
+        home: artistHometown
     };
 
-    
     apiActions.putRequest(
         `https://localhost:44342/api/artist/${artistId}`,
     artistData,
@@ -128,8 +126,8 @@ app.addEventListener("click", function() {
         })
     }
 });
-
 }
+//ablum functions
 function displayAlbum(){
     const albumButton = document.querySelector("#albumbrowse");
     albumButton.addEventListener("click", function(){
