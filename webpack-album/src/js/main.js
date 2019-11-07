@@ -7,6 +7,7 @@ import EditArtist from "./components/EditArtist"
 import Album from "./components/Album"
 import EditAlbum from "./components/EditAlbum"
 import Song from "./components/Song"
+import EditSong from "./components/EditSong"
 import apiActions from "./api/apiActions"
 
 export default () => {
@@ -245,7 +246,7 @@ app.addEventListener("click", function() {
     };
 
     apiActions.putRequest(
-        `https://localhost:44342/api/artist/${albumId}`,
+        `https://localhost:44342/api/album/${albumId}`,
     albumData,
     albums => {
         document.querySelector("#app").innerHTML = Album(albums);
@@ -324,7 +325,7 @@ app.addEventListener("click", function() {
     };
 
     apiActions.putRequest(
-        `https://localhost:44342/api/artist/${songId}`,
+        `https://localhost:44342/api/song/${songId}`,
     songData,
     songs => {
         document.querySelector("#app").innerHTML = Song(songs);
