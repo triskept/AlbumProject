@@ -146,11 +146,13 @@ app.addEventListener("click", function() {
         ".update-artist__age").value;
     const artistHometown = event.target.parentElement.querySelector(
         ".update-artist__home").value;
+    const addArtistImage = "./images/photo-g.jfif"
             
     console.log(artistId);
     console.log(artistName);
     console.log(artistAge);
     console.log(artistHometown);
+    console.log(artistImage)
 
 
     const artistData = {
@@ -158,6 +160,7 @@ app.addEventListener("click", function() {
         name: artistName,
         age: artistAge,
         hometown: artistHometown
+        image: artistImage
     };
 
     apiActions.putRequest(
