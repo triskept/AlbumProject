@@ -29,9 +29,9 @@ namespace AlbumProject.Controllers
 
         // GET api/Albums/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public Album Get(int id)
         {
-            return "Albums";
+            return albumRepo.GetById(id);
         }
 
         // POST api/Albums

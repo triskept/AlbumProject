@@ -215,7 +215,7 @@ html{
 }
 #app #artist{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin: 20px auto;
     border: 3px solid var(--light);
     padding: 1rem;
@@ -256,7 +256,7 @@ html{
 #app li h3, #app li h5{
     margin: auto;
 }
-.add-artist, .add-album, .add-song {
+.add-artist, .add-album, .add-song{
     text-align: center;
     margin: auto;
     border: 3px solid var(--accent);
