@@ -9,14 +9,11 @@ export default function Artist(artists) {
                 <h3>${artistEDIT.name}</h3>
                 <h5>Age: ${artistEDIT.age}</h5>
                 <h5>Hometown: ${artistEDIT.hometown}</h5>
-                <p><input class="artist__id" type="hidden" value="${artistEDIT.id}"></p>
+                <input class="artist__id" type="hidden" value="${artistEDIT.id}">
+                <section class="blank"></section>
                 <button class="edit-artist__submit">Edit</button>
                 <button class="delete-artist__submit">Delete</button>
                 </li>
-                <div id="EDArtist">
-                  <button class="edit-artist__submit">Edit</button>
-                  <button class="delete-artist__submit">Delete</button>
-                </div>
         `;
       })  
       .join("")}

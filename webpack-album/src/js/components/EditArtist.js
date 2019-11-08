@@ -5,11 +5,10 @@ export default function EditArtist(artistEDIT) {
         <h3>Artist: ${artistEDIT.name}</h3>  
         <h3>Age: ${artistEDIT.age}</h3>
         <h3>Hometown: ${artistEDIT.hometown}</h3>
-        <h3>${artistEDIT.name}</h3>  
+        <img id="artistIMG" src=${artistEDIT.image}></img>
         </section>
 
         <section class='update-artist'>
-        <img src=${artistEDIT.image}></img>
         <input class='update-artist__name' type='text' value="${artistEDIT.name}">
         <input class='update-artist__age' type='text' value="${artistEDIT.age}">
         <input class='update-artist__home' type='text' value="${artistEDIT.hometown}">
