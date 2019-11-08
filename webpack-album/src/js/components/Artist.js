@@ -2,14 +2,16 @@ export default function Artist(artists) {
     return `
     <ul> 
     ${artists
-      .map(artist => {
+      .map(artistEDIT => {
         return `
              <li id="artist">
-                <img src=${artist.image}></img>
-                <h3>${artist.name}</h3>
-                <h5>Age: ${artist.age}</h5>
-                <h5>Hometown: ${artist.hometown}</h5>
-                <input class="artist__id" type="hidden" value="${artist.id}">
+                <img src=${artistEDIT.image}></img>
+                <h3>${artistEDIT.name}</h3>
+                <h5>Age: ${artistEDIT.age}</h5>
+                <h5>Hometown: ${artistEDIT.hometown}</h5>
+                <p><input class="artist__id" type="hidden" value="${artistEDIT.id}"></p>
+                <button class="edit-artist__submit">Edit</button>
+                <button class="delete-artist__submit">Delete</button>
                 </li>
                 <div id="EDArtist">
                   <button class="edit-artist__submit">Edit</button>

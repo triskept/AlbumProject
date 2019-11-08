@@ -4,12 +4,15 @@ export default function Album(albums) {
 <section id="albumgrid">    
 <ul> 
     ${albums
-      .map(album => {
+      .map(albumEdit => {
         return `
              <li id="album">
-                <img src=${album.image}></img>
-                <h3>${album.title}</h3>
-                <h5>Label: ${album.label}</h5>  
+                <img src=${albumEdit.image}></img>
+                <h3>${albumEdit.title}</h3>
+                <h5>Label: ${albumEdit.label}</h5>                
+                <p><input class="album__id" type="hidden" value="${albumEdit.id}"></p>
+                <button class="edit-album__submit">Edit</button>
+                <button class="delete-album__submit">Delete</button>
              </li>
         `;
       })
