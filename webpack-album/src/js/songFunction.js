@@ -21,13 +21,18 @@ function displaySong(){
         const addSong = event.target.parentElement.querySelector(
             ".add-song_songTitle"        
         ).value;
+        const addDuration = event.target.parentElement.querySelector(
+            ".add-song_songDuration"        
+        ).value;
+    
 
         console.log(addSong);
         apiActions.postRequest
         ("https://localhost:44342/api/song", 
         {
             title: addSong,
-           albumId: 4
+            duration: addDuration,
+        //    albumId: 4
         },
         songs => {
             console.log(songs);
