@@ -14,5 +14,6 @@ namespace AlbumProject.Repositories
         void Create(T artist);
         void Delete(T artist);
         void Update(T artist);
+        void Save();
     }
 }
