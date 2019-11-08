@@ -22,7 +22,7 @@ export default function Album(albums) {
 
 <section class='add-album'>
     <input class='add-album_albumTitle' type='text' placeholder='Add A New Album!'>
-    <select class= 'add-album__artist' name="Artist">
+    <select class= 'add-album_artist' name="Artist">
     <option value="1">Kid Cudi</option>
     <option value="2">Imagine Dragons</option>
     <option value="3">Pink Floyd</option>

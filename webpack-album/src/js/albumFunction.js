@@ -70,8 +70,8 @@ app.addEventListener("click", function() {
         ".update-album__id").value;
     const albumTitle = event.target.parentElement.querySelector(
         ".update-album__title").value;
-    // const albumArtist = event.target.parentElement.querySelector(
-    //     ".update-album__artist").value;
+    const albumArtist = event.target.parentElement.querySelector(
+        ".update-album_artist").value;
     const albumLabel = event.target.parentElement.querySelector(
         ".update-album__label").value;    
     const addAlbumImage = "./images/photo-g.jfif"
@@ -79,7 +79,7 @@ app.addEventListener("click", function() {
     const albumData = {
         id: albumId,
         title: albumTitle,
-        // artistId: albumArtist,
+        artistId: albumArtist,
         label: albumLabel,
         image: addAlbumImage
     };
