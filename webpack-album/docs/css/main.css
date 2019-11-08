@@ -256,10 +256,31 @@ html{
     height: 100px;
     width: 200px;
 }
-.update-artist, .update-album{
+.update-artist{
     margin: 5% auto;
     border: 3px solid var(--accent);
     width: 328.5px;
+}
+.update-album{
+    margin: 5% auto;
+    border: 3px solid var(--accent);
+    width: 292.75px;
+}
+.update-song{
+    margin: 5% auto;
+    border: 3px solid var(--accent);
+    width: 160px; 
+    text-align: center;
+}
+.main-content__songEDIT{
+    text-align: center;
+    border: 3px solid var(--light);
+    width: 23rem;
+    margin: auto;
+}
+.update-song button{
+    display: inline-block;
+    margin: auto;
 }
 #artistIMG{
     height: 200px;
@@ -272,6 +293,14 @@ html{
     text-align: center;
     align-content: center;
     width: 20rem;
+}
+.main-content__albumEDIT{
+    text-align: center;
+}
+.main-content__albumEDIT img{
+    width: 200px;
+    height: 200px;
+    align-content: center;
 }
 /* #EDArtist{
     height: 25px;

@@ -2,7 +2,8 @@ export default function EditAlbum(albumEDIT) {
     
     return `
         <section class='main-content__albumEDIT'>
-        <h3>${albumEDIT.title}</h3>  
+        <h3>${albumEDIT.title}</h3>
+        <img src=${albumEDIT.image}></img>  
         </section>
 
         <section class='update-album'>

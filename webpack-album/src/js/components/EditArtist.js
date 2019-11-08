@@ -2,7 +2,7 @@ export default function EditArtist(artistEDIT) {
     
     return `
         <section class='main-content__artistEDIT'>
-        <h3>Artist: ${artistEDIT.name}</h3>  
+        <h3>${artistEDIT.name}</h3>  
         <h3>Age: ${artistEDIT.age}</h3>
         <h3>Hometown: ${artistEDIT.hometown}</h3>
         <img id="artistIMG" src=${artistEDIT.image}></img>
