@@ -160,7 +160,7 @@ app.addEventListener("click", function() {
         name: artistName,
         age: artistAge,
         hometown: artistHometown
-        image: artistImage
+        
     };
 
     apiActions.putRequest(
