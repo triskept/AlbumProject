@@ -46,7 +46,7 @@ namespace AlbumProject.Controllers
 
         // PUT: api/Song/5
         [HttpPut("{id}")]
-        public IEnumerable<Song> Put(int id, [FromBody] Song song)
+        public IEnumerable<Song> Put([FromBody] Song song)
         {
             songRepo.Update(song);
             return songRepo.GetAll();

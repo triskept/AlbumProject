@@ -45,7 +45,7 @@ namespace AlbumProject.Controllers
 
         // PUT api/Albums/5
         [HttpPut("{id}")]
-        public IEnumerable<Album> Put(int id, [FromBody] Album album)
+        public IEnumerable<Album> Put([FromBody] Album album)
         {
             albumRepo.Update(album);
             return albumRepo.GetAll();
