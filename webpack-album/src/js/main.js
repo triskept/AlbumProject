@@ -91,6 +91,7 @@ function songNAV(){
         apiActions.getRequest("https://localhost:44342/api/song", songs => {
             document.querySelector("#app").innerHTML = Song(songs);
             console.log(songs);
-        });
+
+    });
     });
 }
