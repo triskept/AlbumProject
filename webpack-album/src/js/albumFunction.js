@@ -27,13 +27,15 @@ function displayAlbum(){
         const addAlbumLabel = event.target.parentElement.querySelector(
             ".add-album_Label"
         ).value;
+        const addAlbumImage = "./images/photo-g.jfif"
         console.log(addAlbum);
         apiActions.postRequest
         ("https://localhost:44342/api/album", 
         {
             title: addAlbum,
             artistId: addAlbumArtist,
-            label: addAlbumLabel
+            label: addAlbumLabel,
+            image: addAlbumImage
         },
         albums => {
             console.log(albums);

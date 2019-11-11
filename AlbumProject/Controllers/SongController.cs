@@ -29,7 +29,7 @@ namespace AlbumProject.Controllers
         }
 
         // GET: api/Song/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}")]
         public Song Get(int id)
         {
             return songRepo.GetById(id);

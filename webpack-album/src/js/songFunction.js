@@ -24,15 +24,17 @@ function displaySong(){
         const addDuration = event.target.parentElement.querySelector(
             ".add-song_songDuration"        
         ).value;
-    
-
+        const songAlbum = event.target.parentElement.querySelector(
+            ".add-song_album").value;    
+        const addAlbumImage = "./images/photo-g.jfif"
         console.log(addSong);
         apiActions.postRequest
         ("https://localhost:44342/api/song", 
         {
             title: addSong,
             duration: addDuration,
-        //    albumId: 4
+            albumId: songAlbum,
+            image: addAlbumImage
         },
         songs => {
             console.log(songs);
@@ -70,14 +72,15 @@ app.addEventListener("click", function() {
         ".update-song_title").value;
     const songDuration = event.target.parentElement.querySelector(
         ".update-song_duration").value;    
-    // const songAlbum = event.target.parentElement.querySelector(
-    //     ".update-song__album").value;
-     
+    const songAlbum = event.target.parentElement.querySelector(
+        ".update-song_album").value;
+    const addAlbumImage = "./images/photo-g.jfif"
     const songData = {
         id: songId,
         title: songTitle,
-        duration: songDuration
-        // albumId: songArtist,
+        duration: songDuration,
+        albumId: songAlbum,
+        image: addAlbumImage
     };
 
     apiActions.putRequest(
