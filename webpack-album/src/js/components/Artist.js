@@ -9,6 +9,7 @@ export default function Artist(artists) {
                 <h3>${artistEDIT.name}</h3>
                 <h5>Age: ${artistEDIT.age}</h5>
                 <h5>Hometown: ${artistEDIT.hometown}</h5>
+<<<<<<< HEAD
                 <p><input class="artist_id" type="hidden" value="${artistEDIT.id}"></p>
                 <button class="edit-artist_submit">Edit</button>
                 <button class="delete-artist_submit">Delete</button>
@@ -17,6 +18,13 @@ export default function Artist(artists) {
                   <button class="edit-artist_submit">Edit</button>
                   <button class="delete-artist_submit">Delete</button>
                 </div>
+=======
+                <input class="artist__id" type="hidden" value="${artistEDIT.id}">
+                <section class="blank"></section>
+                <button class="edit-artist__submit">Edit</button>
+                <button class="delete-artist__submit">Delete</button>
+                </li>
+>>>>>>> 50e727240ea08a8f529e9b2522485467d5966582
         `;
       })  
       .join("")}
