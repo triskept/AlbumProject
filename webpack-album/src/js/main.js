@@ -12,6 +12,7 @@ import displaySong from "./songFunction"
 import Song from "./components/Song"
 // import EditSong from "./components/EditSong"
 import apiActions from "./api/apiActions"
+import AllAlbum from "./components/AllAlbums"
 
 export default () => {
     pageBuild()
@@ -29,6 +30,7 @@ function pageBuild(){
     artistNAV();
     albumNAV();
     songNAV();
+    AllAlbum();
 }
 
 function header(){
@@ -64,6 +66,10 @@ function albumAction(){
 
 function songAction(){
     displaySong()
+}
+
+function allAlbums(){
+    AllAlbum()
 }
 
 //NAV functions
