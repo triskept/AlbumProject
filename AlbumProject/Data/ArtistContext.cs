@@ -1518,7 +1518,7 @@ namespace AlbumProject.Data
                     Title = "Coming Back To Life",
                     Duration = "6:19",
                     AlbumId = 11,
-                    AlbumTitle = "The Division Bell
+                    AlbumTitle = "The Division Bell"
                 },
                 new Song()
                 {
@@ -1760,7 +1760,7 @@ namespace AlbumProject.Data
                     Title = "Eclipse",
                     Duration = "2:10",
                     AlbumId = 14,
-                    AlbumTitle = "The Dark Side of the Moon
+                    AlbumTitle = "The Dark Side of the Moon"
                 },
                 new Song()
                 {
@@ -2127,301 +2127,344 @@ namespace AlbumProject.Data
                    Id = 235,
                    Title = "The Element of Freedom (Intro)",
                    Duration = "0:12",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 236,
                    Title = "Love is Blind",
                    Duration = "3:49",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 237,
                    Title = "Doesn't Mean Anything",
                    Duration = "4:32",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 238,
                    Title = "Try Sleeping with a Broken Heart",
                    Duration = "4:09",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 239,
                    Title = "Wait Til You See My Smile",
                    Duration = "4:01",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 240,
                    Title = "That's How Strong My Love Is",
                    Duration = "4:04",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 241,
                    Title = "Un-Thinkable (I'm Ready)",
                    Duration = "4:09",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 242,
                    Title = "Love Is My Disease",
                    Duration = "4:01",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 243,
                    Title = "Like the Sea",
                    Duration = "4:13",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 244,
                    Title = "Put It in a Love Song",
                    Duration = "3:15",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 245,
                    Title = "This Bed",
                    Duration = "3:45",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 246,
                    Title = "Distance and Time",
                    Duration = "4:27",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 247,
                    Title = "How It Feels to Fly",
                    Duration = "4:42",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 248,
                    Title = "Empire State of Mind (Part II) Broken Down",
                    Duration = "3:36",
-                   AlbumId = 18
+                   AlbumId = 18,
+                   AlbumTitle = "The Element of Freedom"
                },
                new Song()
                {
                    Id = 249,
                    Title = "De Novo Adagio (Intro)",
                    Duration = "1:19",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 250,
                    Title = "Brand New Me",
                    Duration = "3:53",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 251,
                    Title = "When It's All Over",
                    Duration = "4:34",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 252,
                    Title = "Listen to Your Heart",
                    Duration = "3:46",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 253,
                    Title = "New Day",
                    Duration = "4:02",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 254,
                    Title = "Girl on Fire",
                    Duration = "4:30",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 255,
                    Title = "Fire We Make",
                    Duration = "5:21",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 256,
                    Title = "Tears Always Win",
                    Duration = "3:59",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 257,
                    Title = "Not Even the King",
                    Duration = "3:07",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 258,
                    Title = "That's When I Knew",
                    Duration = "4:05",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 259,
                    Title = "Limitedless",
                    Duration = "3:57",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 260,
                    Title = "One Thing",
                    Duration = "4:08",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 261,
                    Title = "101",
                    Duration = "6:29",
-                   AlbumId = 19
+                   AlbumId = 19,
+                   AlbumTitle = "Girl on Fire"
                },
                new Song()
                {
                    Id = 262,
                    Title = "The Beginning",
                    Duration = "1:04",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 263,
                    Title = "The Gospel",
                    Duration = "3:01",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 264,
                    Title = "Pawn It All",
                    Duration = "3:10",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 265,
                    Title = "Elain Brown (interlude)",
                    Duration = "0:50",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 266,
                    Title = "Kill Your Mama",
                    Duration = "2:40",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 267,
                    Title = "She Don't Really Care/1 Luv",
                    Duration = "6:07",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 268,
                    Title = "Elevate (interlude)",
                    Duration = "0:48",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 269,
                    Title = "Illusion of Bliss",
                    Duration = "5:23",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 270,
                    Title = "Blended Family (What You Do for Love)",
                    Duration = "3:31",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 271,
                    Title = "Work on It",
                    Duration = "3:34",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 272,
                    Title = "Cocoa Butter (Cross & Pic Interlude)",
                    Duration = "0:59",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 273,
                    Title = "Girl Can't Be Herself",
                    Duration = "2:39",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 274,
                    Title = "You Glow (interlude)",
                    Duration = "0:25",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 275,
                    Title = "More than We Know",
                    Duration = "4:35",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 276,
                    Title = "Where Do We Begin Now",
                    Duration = "2:47",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                },
                new Song()
                {
                    Id = 277,
                    Title = "Holy War",
                    Duration = "4:22",
-                   AlbumId = 20
+                   AlbumId = 20,
+                   AlbumTitle = "Here"
                });
         }
     }
