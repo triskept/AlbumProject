@@ -33,6 +33,7 @@ function displayAlbum(){
         {
             title: addAlbum,
             artistId: addAlbumArtist,
+            artistName: addAlbumArtist,
             label: addAlbumLabel
         },
         albums => {
