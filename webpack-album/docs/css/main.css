@@ -287,17 +287,17 @@ html{
     width: 200px;
     margin-bottom: 2%;
 }
-.main-content__artistEDIT{
+.main-content_artistEDIT{
     border: 3px solid var(--light);
     margin: auto;
     text-align: center;
     align-content: center;
     width: 20rem;
 }
-.main-content__albumEDIT{
+.main-content_albumEDIT{
     text-align: center;
 }
-.main-content__albumEDIT img{
+.main-content_albumEDIT img{
     width: 200px;
     height: 200px;
     align-content: center;
