@@ -3,14 +3,16 @@ using AlbumProject.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AlbumProject.Migrations
 {
     [DbContext(typeof(ArtistContext))]
-    partial class ArtistContextModelSnapshot : ModelSnapshot
+    [Migration("20191111143020_ArtistNameToAlbum")]
+    partial class ArtistNameToAlbum
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,11 +28,11 @@ namespace AlbumProject.Migrations
 
                     b.Property<int>("ArtistId");
 
-                    b.Property<string>("ArtistName");
-
                     b.Property<string>("Image");
 
                     b.Property<string>("Label");
+
+                    b.Property<string>("Name");
 
                     b.Property<string>("Title");
 
@@ -71,8 +73,6 @@ namespace AlbumProject.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("Age");
-
-                    b.Property<string>("AlbumTitle");
 
                     b.Property<string>("Hometown");
 

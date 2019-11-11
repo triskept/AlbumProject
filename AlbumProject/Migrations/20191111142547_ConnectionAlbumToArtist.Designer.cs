@@ -3,14 +3,16 @@ using AlbumProject.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AlbumProject.Migrations
 {
     [DbContext(typeof(ArtistContext))]
-    partial class ArtistContextModelSnapshot : ModelSnapshot
+    [Migration("20191111142547_ConnectionAlbumToArtist")]
+    partial class ConnectionAlbumToArtist
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,8 +27,6 @@ namespace AlbumProject.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("ArtistId");
-
-                    b.Property<string>("ArtistName");
 
                     b.Property<string>("Image");
 
@@ -71,8 +71,6 @@ namespace AlbumProject.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("Age");
-
-                    b.Property<string>("AlbumTitle");
 
                     b.Property<string>("Hometown");
 
@@ -395,7 +393,7 @@ namespace AlbumProject.Migrations
 
             modelBuilder.Entity("AlbumProject.Models.Album", b =>
                 {
-                    b.HasOne("AlbumProject.Models.Artist", "Artist")
+                    b.HasOne("AlbumProject.Models.Artist", "ArtistName")
                         .WithMany("Albums")
                         .HasForeignKey("ArtistId")
                         .OnDelete(DeleteBehavior.Cascade);

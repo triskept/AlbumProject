@@ -14,6 +14,7 @@ namespace AlbumProject.Models
 
         public virtual Artist Artist { get; set; }
         public int ArtistId { get; set; }
+        public virtual string ArtistName { get; set; }
 
         public virtual ICollection<Song> Songs { get; set; }
 
