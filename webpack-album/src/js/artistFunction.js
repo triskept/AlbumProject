@@ -43,8 +43,8 @@ function displayArtist(){
 });
 
 app.addEventListener("click", function() {
-    if(event.target.classList.contains("delete-artist__submit")) {
-        const artistId = event.target.parentElement.querySelector(".artist__id").value;
+    if(event.target.classList.contains("delete-artist_submit")) {
+        const artistId = event.target.parentElement.querySelector(".artist_id").value;
         console.log("delete" + artistId);
         apiActions.deleteRequest(`https://localhost:44342/api/artist/${artistId}`,
             artists => {
@@ -54,8 +54,8 @@ app.addEventListener("click", function() {
 });
 
 app.addEventListener("click", function() {
-    if(event.target.classList.contains("edit-artist__submit")) {
-        const artistId = event.target.parentElement.querySelector(".artist__id").value;
+    if(event.target.classList.contains("edit-artist_submit")) {
+        const artistId = event.target.parentElement.querySelector(".artist_id").value;
         console.log("edit" + artistId);
         apiActions.getRequest(`https://localhost:44342/api/artist/${artistId}`, artistEDIT => {
                 app.innerHTML = EditArtist(artistEDIT);
@@ -64,15 +64,15 @@ app.addEventListener("click", function() {
 });
 
 app.addEventListener("click", function() {
-    if(event.target.classList.contains("update-artist__submit")) {
+    if(event.target.classList.contains("update-artist_submit")) {
     const artistId = event.target.parentElement.querySelector(
-        ".update-artist__id").value;
+        ".update-artist_id").value;
     const artistName = event.target.parentElement.querySelector(
-        ".update-artist__name").value;
+        ".update-artist_name").value;
     const artistAge = event.target.parentElement.querySelector(
-        ".update-artist__age").value;
+        ".update-artist_age").value;
     const artistHometown = event.target.parentElement.querySelector(
-        ".update-artist__home").value;
+        ".update-artist_home").value;
     const addArtistImage = "./images/photo-g.jfif"
      
     const artistData = {

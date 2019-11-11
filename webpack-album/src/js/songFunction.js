@@ -24,15 +24,17 @@ function displaySong(){
         const addDuration = event.target.parentElement.querySelector(
             ".add-song_songDuration"        
         ).value;
-    
-
+        const songAlbum = event.target.parentElement.querySelector(
+            ".add-song_album").value;    
+        const addAlbumImage = "./images/photo-g.jfif"
         console.log(addSong);
         apiActions.postRequest
         ("https://localhost:44342/api/song", 
         {
             title: addSong,
             duration: addDuration,
-        //    albumId: 4
+            albumId: songAlbum,
+            image: addAlbumImage
         },
         songs => {
             console.log(songs);
@@ -42,8 +44,8 @@ function displaySong(){
     }
 });
 app.addEventListener("click", function() {
-    if(event.target.classList.contains("delete-song__submit")) {
-        const songId = event.target.parentElement.querySelector(".song__id").value;
+    if(event.target.classList.contains("delete-song_submit")) {
+        const songId = event.target.parentElement.querySelector(".song_id").value;
         console.log("delete" + songId);
         apiActions.deleteRequest(`https://localhost:44342/api/song/${songId}`,
             songs => {
@@ -53,8 +55,8 @@ app.addEventListener("click", function() {
 });
 
 app.addEventListener("click", function() {
-    if(event.target.classList.contains("edit-song__submit")) {
-        const songId = event.target.parentElement.querySelector(".song__id").value;
+    if(event.target.classList.contains("edit-song_submit")) {
+        const songId = event.target.parentElement.querySelector(".song_id").value;
         console.log("edit" + songId);
         apiActions.getRequest(`https://localhost:44342/api/song/${songId}`, songEDIT => {
                 app.innerHTML = EditSong(songEDIT);
@@ -63,21 +65,22 @@ app.addEventListener("click", function() {
 });
 
 app.addEventListener("click", function() {
-    if(event.target.classList.contains("update-song__submit")) {
+    if(event.target.classList.contains("update-song_submit")) {
     const songId = event.target.parentElement.querySelector(
-        ".update-song__id").value;
+        ".update-song_id").value;
     const songTitle = event.target.parentElement.querySelector(
-        ".update-song__title").value;
+        ".update-song_title").value;
     const songDuration = event.target.parentElement.querySelector(
-        ".update-song__duration").value;    
-    // const songAlbum = event.target.parentElement.querySelector(
-    //     ".update-song__album").value;
-     
+        ".update-song_duration").value;    
+    const songAlbum = event.target.parentElement.querySelector(
+        ".update-song_album").value;
+    const addAlbumImage = "./images/photo-g.jfif"
     const songData = {
         id: songId,
         title: songTitle,
-        duration: songDuration
-        // albumId: songArtist,
+        duration: songDuration,
+        albumId: songAlbum,
+        image: addAlbumImage
     };
 
     apiActions.putRequest(
