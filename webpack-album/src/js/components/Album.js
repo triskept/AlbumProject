@@ -9,10 +9,11 @@ export default function Album(albums) {
              <li id="album">
                 <img src=${albumEdit.image}></img>
                 <h3>${albumEdit.title}</h3>
-                <h5>Label: ${albumEdit.label}</h5>                
-                <p><input class="album_id" type="hidden" value="${albumEdit.id}"></p>
-                <button class="edit-album_submit">Edit</button>
-                <button class="delete-album_submit">Delete</button>
+                <h5>${albumEdit.artistName}<h5>
+                <h5>Label: ${albumEdit.label}</h5>          
+                <p><input class="album__id" type="hidden" value="${albumEdit.id}"></p>
+                <button class="edit-album__submit">Edit</button>
+                <button class="delete-album__submit">Delete</button>
              </li>
         `;
       })

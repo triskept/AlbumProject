@@ -13,6 +13,7 @@ namespace AlbumProject.Models
 
         public virtual Album Album { get; set; }
         public int AlbumId { get; set; }
+        public string AlbumTitle { get; set; }
 
         public Song()
         {

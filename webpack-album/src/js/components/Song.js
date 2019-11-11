@@ -1,10 +1,3 @@
-import albumEdit from "./Album"
-
-// function albuminfo()
-// {
-//   albumEdit(title)
-// }
-
 export default function Song(songs) {
     return `
     <section id="songgrid">
@@ -14,7 +7,7 @@ export default function Song(songs) {
         return `
              <li>
                 <h3>${songEdit.title}</h3>
-                <h4>Album: ${albumEdit.title}</h4>
+                <h4>Album: ${songEdit.albumTitle}</h4>
                 <h5>Duration: ${songEdit.duration}</h5>
                 <p><input class="song_id" type="hidden" value="${songEdit.id}"></p>
                 <button class="edit-song_submit">Edit</button>
