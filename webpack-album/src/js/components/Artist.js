@@ -11,6 +11,7 @@ export default function Artist(artists) {
                 <h5>Hometown: ${artistEDIT.hometown}</h5>
                 <p><input class="artist_id" type="hidden" value="${artistEDIT.id}"></p>
                 <button class="edit-artist_submit">Edit</button>
+                <button class="edit-artist_submit">Edit</button>
                 <button class="delete-artist_submit">Delete</button>
                 </li>
                 <div id="EDArtist">
