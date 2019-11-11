@@ -44,8 +44,8 @@ function displayAlbum(){
 });
 
 app.addEventListener("click", function() {
-    if(event.target.classList.contains("delete-album__submit")) {
-        const albumId = event.target.parentElement.querySelector(".album__id").value;
+    if(event.target.classList.contains("delete-album_submit")) {
+        const albumId = event.target.parentElement.querySelector(".album_id").value;
         console.log("delete" + albumId);
         apiActions.deleteRequest(`https://localhost:44342/api/album/${albumId}`,
             albums => {
@@ -55,8 +55,8 @@ app.addEventListener("click", function() {
 });
 
 app.addEventListener("click", function() {
-    if(event.target.classList.contains("edit-album__submit")) {
-        const albumId = event.target.parentElement.querySelector(".album__id").value;
+    if(event.target.classList.contains("edit-album_submit")) {
+        const albumId = event.target.parentElement.querySelector(".album_id").value;
         console.log("edit" + albumId);
         apiActions.getRequest(`https://localhost:44342/api/album/${albumId}`, albumEDIT => {
                 app.innerHTML = EditAlbum(albumEDIT);
@@ -65,15 +65,15 @@ app.addEventListener("click", function() {
 });
 
 app.addEventListener("click", function() {
-    if(event.target.classList.contains("update-album__submit")) {
+    if(event.target.classList.contains("update-album_submit")) {
     const albumId = event.target.parentElement.querySelector(
-        ".update-album__id").value;
+        ".update-album_id").value;
     const albumTitle = event.target.parentElement.querySelector(
-        ".update-album__title").value;
+        ".update-album_title").value;
     const albumArtist = event.target.parentElement.querySelector(
         ".update-album_artist").value;
     const albumLabel = event.target.parentElement.querySelector(
-        ".update-album__label").value;    
+        ".update-album_label").value;    
     const addAlbumImage = "./images/photo-g.jfif"
      
     const albumData = {

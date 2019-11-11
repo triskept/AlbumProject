@@ -16,9 +16,9 @@ export default function Song(songs) {
                 <h3>${songEdit.title}</h3>
                 <h4>Album: ${albumEdit.title}</h4>
                 <h5>Duration: ${songEdit.duration}</h5>
-                <p><input class="song__id" type="hidden" value="${songEdit.id}"></p>
-                <button class="edit-song__submit">Edit</button>
-                <button class="delete-song__submit">Delete</button>
+                <p><input class="song_id" type="hidden" value="${songEdit.id}"></p>
+                <button class="edit-song_submit">Edit</button>
+                <button class="delete-song_submit">Delete</button>
               </li>
         `;
       })

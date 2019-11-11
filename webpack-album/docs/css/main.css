@@ -267,7 +267,7 @@ html{
     padding: 0;
     margin: 3% auto;
 }
-.edit-artist__submit, .delete-artist__submit{
+.edit-artist_submit, .delete-artist_submit{
     font-family: Kalam;
     color: var(--light);
     background-color: var(--accent);
