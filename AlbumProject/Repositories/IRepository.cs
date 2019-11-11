@@ -11,8 +11,8 @@ namespace AlbumProject.Repositories
     {
         IEnumerable<T> GetAll();
         T GetById(int id);
-        void Create(T artist);
-        void Delete(T artist);
-        void Update(T artist);
+        void Create(T entity);
+        void Delete(T entity);
+        void Update(T entity);
     }
 }
