@@ -1,0 +1,396 @@
+/*CSS Variables*/
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --accent: #c97de9;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --prim: rgba(220, 138, 235, 0.75);
+    --overlay: rgba(149, 81, 161, 0.835);
+    --menu-speed: 0.75s;
+}
+html{
+    font-family: 'Kalam',sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.698),rgb(0, 0, 0, 0.698)) ,url("/images/coffeeshop.jfif");
+    background-size: cover;
+    background-position: center;
+}
+/* Top of page */
+/* start of nav */
+.menu-wrap{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.menu-wrap .toggler{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: .5rem;
+    background: var(--prim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Hamburger lines */
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+/* Top and bottom lines */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+/* Moves 2nd top line down to bottom */
+.menu-wrap .hamburger > div:after{
+    top: 10px;
+}
+/* toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+/* turn lines into x */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after{
+    top: 0;
+    transform: rotate(90deg);
+}
+/* rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div{
+    transform: rotate(225deg);
+}
+/* show menu */
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+}
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrap .menu > div {
+    background: var(--overlay);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.menu-wrap .menu > div > div > ul > li > a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+/* end nav */
+#header{
+    max-width: 400px;
+    margin: 5% auto;
+    text-align: center;
+    border: 3px solid var(--accent);
+    box-shadow: var(--shadow);
+    color: var(--light);
+}
+/* end of top page */
+/* Body of page */
+#wrapper{
+    min-width: 500px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+/* 3 pages grid */
+#grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center; 
+}
+#grid2{
+    display: grid;
+    margin-top: 2%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center; 
+}
+#grid h3{
+    text-align:center;
+    color: var(--light);
+}
+#artists, #albums, #songs{
+    color: var(--accent);
+    box-shadow: var(--shadow);
+    border: 3px solid var(--light);
+    padding: .5em 2rem;
+}
+#artistbutton, #albumbutton, #songbutton{
+    color: var(--accent);
+    box-shadow: var(--shadow);
+    border: 2px solid var(--accent);
+    /* padding: .75rem .5rem; */
+    width: 100px;
+    margin: auto;
+}
+#artistbutton a, #albumbutton a, #songbutton a{
+    position:relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* border: 1px solid var(--light); */
+    display: inline-block;
+    color:var(--light);
+    transition:0.5s;
+}
+#artistbutton:hover a, #albumbutton:hover a, #songbutton:hover a{
+    transform: scale(1.25);
+}
+/* End of 3 pages grid */
+/* app display */
+#app{
+    color: white;
+}
+#app #artist{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 3% auto;
+    border: 3px solid var(--light);
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+#albumgrid ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr)
+}
+#albumgrid li{
+    padding: 0.8rem;
+}
+#songgrid h3{
+    color: var(--accent);
+}
+#songgrid ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+#songgrid li{
+    border: 2px solid var(--light);
+    padding: 0.8rem;
+}
+#app li img, #albumgrid li img{
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    max-width: 200px;
+    border: 2px solid var(--accent);
+}
+#app li h3, #app li h5{
+    margin: auto;
+}
+.add-artist, .add-album{
+    text-align: center;
+    margin: auto;
+    border: 3px solid var(--accent);
+    height: 100px;
+    width: 200px;
+    padding: .5rem;
+}
+.add-song {
+    text-align: center;
+    margin: auto;
+    border: 3px solid var(--accent);
+    height: 105px;
+    width: 300px;
+    /* padding: .5rem; */
+
+}
+.add-album select{
+    margin: auto;
+}
+.update-artist{
+    margin: 5% auto;
+    border: 3px solid var(--accent);
+    width: 161px;
+
+}
+.update-album{
+    margin: 5% auto;
+    border: 3px solid var(--accent);
+    width: 292.75px;
+}
+.update-song{
+    margin: 5% auto;
+    border: 3px solid var(--accent);
+    width: 300px; 
+    text-align: center;
+}
+.main-content_songEDIT{
+    text-align: center;
+    border: 3px solid var(--light);
+    width: 23rem;
+    margin: auto;
+}
+.update-song button{
+    display: inline-block;
+    margin: auto;
+}
+#artistIMG{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 2%;
+}
+.main-content_artistEDIT{
+    border: 3px solid var(--light);
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    width: 20rem;
+}
+.main-content_albumEDIT{
+    text-align: center;
+}
+.main-content_albumEDIT img{
+    width: 200px;
+    height: 200px;
+    align-content: center;
+}
+
+.edit-artist_submit, .delete-artist_submit, .edit-album_submit, .delete-album_submit, .edit-song_submit, .delete-song_submit{
+    color: var(--light);
+    background-color: var(--accent);
+    border-radius: 1rem;
+    height: 25px;
+    width: 75px;
+    margin: auto;
+}
+.update-song button, .update-album button{
+    color: var(--light);
+    background-color: var(--accent);
+    border-radius: 1rem;
+    height: 25px;
+    width: 120px;
+    margin: auto;
+}
+.update-artist_submit{
+    color: var(--light);
+    background-color: var(--accent);
+    border-radius: 1rem;
+    height: 25px;
+    width: 120px;
+    margin-left: 1.25rem;
+
+}
+.add-album_submit, .add-artist_submit, .add-song_submit{
+    color: var(--light);
+    background-color: var(--accent);
+    border-radius: 1rem;
+    height: 25px;
+    width: 75px;
+    margin: auto auto 2% auto;
+
+}
+.main-content_albumEDIT img{
+    border: 3px solid var(--light);
+}
+/* end app display */
+/* Featured Album */
+#featured{
+    margin-top: 3%;
+    text-align: center;
+} 
+#description{
+    margin: 0 auto;
+    color: var(--light);
+    max-height: 75px;
+    max-width: 250px;
+}
+#decription h3, #description h4{
+    border: 0;
+    margin: -25px;
+}
+#featuredimg{
+    color: var(--light);
+    padding: 1.5em 2rem;
+}
+#featuredimg img{
+    border: 3px solid var(--accent);   
+}
+.add-album_artist{
+margin-right: 3rem;
+    }
+/* End of Featured Album grid */
+/* End of body */
+/* footer */
+footer h6{
+    text-align: center;
+    color: var(--light);
+    border: 2px solid var(--light);
+    box-shadow: var(--shadow);
+}
+footer{
+    max-width: 125px;
+    padding: 0;
+    margin: 10% auto;
+}

@@ -10,13 +10,18 @@ namespace AlbumProject.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Image { get; set; }
-        public string Songs { get; set; }
         public string Label { get; set; }
 
-        public Song Song { get; set; }
-        public int SongId { get; set; }
+        public virtual Artist Artist { get; set; }
+        public int ArtistId { get; set; }
+        public string ArtistName { get; set; }
 
-        ICollection<Artist> Artists { get; set; }
+        public virtual ICollection<Song> Songs { get; set; }
+
+        public Album(int id, string title)
+        {
+            Id = id;
+            Title = title;        }
 
         public Album()
         {

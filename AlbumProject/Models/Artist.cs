@@ -9,14 +9,19 @@ namespace AlbumProject.Models
     {
         public string Name { get; set; }
         public string Image { get; set; }
-        public string Albums { get; set; }
         public int Age { get; set; }
         public string Hometown { get; set; }
         public int Id { get; set; }
 
-        public Album Album { get; set; }
-        public int AlbumId { get; set; }
+        public virtual ICollection<Album> Albums { get; set; }
+        public string AlbumTitle { get; set; }
 
+
+        public Artist(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
         public Artist()
         {
 
