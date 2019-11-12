@@ -249,17 +249,31 @@ html{
 #app li h3, #app li h5{
     margin: auto;
 }
-.add-artist, .add-album, .add-song{
+.add-artist, .add-album{
     text-align: center;
     margin: auto;
     border: 3px solid var(--accent);
     height: 100px;
     width: 200px;
+    padding: .5rem;
+}
+.add-song {
+    text-align: center;
+    margin: auto;
+    border: 3px solid var(--accent);
+    height: 105px;
+    width: 300px;
+    /* padding: .5rem; */
+
+}
+.add-album select{
+    margin: auto;
 }
 .update-artist{
     margin: 5% auto;
     border: 3px solid var(--accent);
-    width: 328.5px;
+    width: 161px;
+
 }
 .update-album{
     margin: 5% auto;
@@ -311,13 +325,30 @@ html{
     width: 75px;
     margin: auto;
 }
-.update-song button{
+.update-song button, .update-album button{
     color: var(--light);
     background-color: var(--accent);
     border-radius: 1rem;
     height: 25px;
     width: 120px;
     margin: auto;
+}
+.update-artist_submit{
+    color: var(--light);
+    background-color: var(--accent);
+    border-radius: 1rem;
+    height: 25px;
+    width: 120px;
+    margin-left: 1.25rem;
+
+}
+.add-album_submit, .add-artist_submit, .add-song_submit{
+    color: var(--light);
+    background-color: var(--accent);
+    border-radius: 1rem;
+    height: 25px;
+    width: 75px;
+    margin: auto auto 2% auto;
 
 }
 .main-content_albumEDIT img{
@@ -363,5 +394,3 @@ footer{
     padding: 0;
     margin: 10% auto;
 }
-
-
