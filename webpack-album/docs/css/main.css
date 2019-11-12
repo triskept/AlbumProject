@@ -272,7 +272,7 @@ html{
 .update-artist{
     margin: 5% auto;
     border: 3px solid var(--accent);
-    width: 161px;
+    width: 168.5px;
 
 }
 .update-album{
@@ -295,6 +295,9 @@ html{
 .update-song button{
     display: inline-block;
     margin: auto;
+}
+#btn{
+    display: block;
 }
 #artistIMG{
     height: 200px;

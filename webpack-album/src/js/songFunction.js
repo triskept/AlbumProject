@@ -21,13 +21,15 @@ function displaySong(){
         const addSong = event.target.parentElement.querySelector(
             ".add-song_songTitle"        
         ).value;
+        console.log(addSong)
         const addDuration = event.target.parentElement.querySelector(
             ".add-song_songDuration"        
         ).value;
+        console.log(addDuration)
         const songAlbum = event.target.parentElement.querySelector(
             ".add-song_album").value;    
         const addAlbumImage = "./images/photo-g.jfif"
-        console.log(addSong);
+        console.log(songAlbum);
         apiActions.postRequest
         ("https://localhost:44342/api/song", 
         {

@@ -51,7 +51,7 @@ function homegrid(){
 function displayHome(){
     const homeButton = document.querySelector("#Home");
     homeButton.addEventListener("click", function(){
-        homegrid()
+    window.location.reload()
     });
 }
 function artistAction(){
