@@ -6,8 +6,8 @@ export default function Album(albums) {
     ${albums
       .map(albumEdit => {
         return `
-             <li id="album">
-                <img src=${albumEdit.image}></img>
+             <li class="select-album" id="album">
+                <img src=${albumEdit.image} class="albumIMG"></img>
                 <h3>${albumEdit.title}</h3>
                 <h5>${albumEdit.artistName}<h5>
                 <h5>Label: ${albumEdit.label}</h5>          

@@ -1,6 +1,7 @@
 import Album from "./components/Album"
 import EditAlbum from "./components/EditAlbum"
 import apiActions from "./api/apiActions"
+import AlbumSongs from "./components/AlbumSongs"
 
 export default () => {
     displayAlbum()
@@ -16,6 +17,17 @@ function displayAlbum(){
     });
 
     const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("albumIMG")){
+        const albumId = event.target.parentElement.querySelector(".album_id").value;
+        apiActions.getRequest(`https://localhost:44342/api/album/${albumId}`, album => {
+            document.querySelector("#app").innerHTML = AlbumSongs(album);
+            console.log(album);
+        });
+    }
+    });
+
+    // const app = document.querySelector("#app");
     app.addEventListener("click", function(){
     if(event.target.classList.contains("add-album_submit")){
         const addAlbum = event.target.parentElement.querySelector(

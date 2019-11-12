@@ -5,7 +5,6 @@ import ArtistAlbums from "./components/ArtistAlbums"
 
 export default () => {
     displayArtist()
-    displayArtistAlbums()
 }
 
 function displayArtist(){
@@ -104,7 +103,4 @@ app.addEventListener("click", function() {
         })
     }
 });
-}
-
-function displayArtistAlbums(){
 }
