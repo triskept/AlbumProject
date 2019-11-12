@@ -18,6 +18,11 @@ namespace AlbumProject.Models
 
         public virtual ICollection<Song> Songs { get; set; }
 
+        public Album(int id, string title)
+        {
+            Id = id;
+            Title = title;        }
+
         public Album()
         {
 
