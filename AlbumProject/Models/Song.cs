@@ -15,6 +15,12 @@ namespace AlbumProject.Models
         public int AlbumId { get; set; }
         public string AlbumTitle { get; set; }
 
+        public Song(int id, string title)
+        {
+            Id = id;
+            Title = title;
+        }
+
         public Song()
         {
         }
