@@ -269,10 +269,10 @@ html{
 .update-song{
     margin: 5% auto;
     border: 3px solid var(--accent);
-    width: 160px; 
+    width: 300px; 
     text-align: center;
 }
-.main-content__songEDIT{
+.main-content_songEDIT{
     text-align: center;
     border: 3px solid var(--light);
     width: 23rem;
@@ -304,10 +304,24 @@ html{
 }
 
 .edit-artist_submit, .delete-artist_submit, .edit-album_submit, .delete-album_submit, .edit-song_submit, .delete-song_submit{
-    font-family: Kalam;
     color: var(--light);
     background-color: var(--accent);
     border-radius: 1rem;
+    height: 25px;
+    width: 75px;
+    margin: auto;
+}
+.update-song button{
+    color: var(--light);
+    background-color: var(--accent);
+    border-radius: 1rem;
+    height: 25px;
+    width: 120px;
+    margin: auto;
+
+}
+.main-content_albumEDIT img{
+    border: 3px solid var(--light);
 }
 /* end app display */
 /* Featured Album */

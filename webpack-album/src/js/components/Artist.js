@@ -13,10 +13,6 @@ export default function Artist(artists) {
                 <button class="edit-artist_submit">Edit</button>
                 <button class="delete-artist_submit">Delete</button>
                 </li>
-                <div id="EDArtist">
-                  <button class="edit-artist_submit">Edit</button>
-                  <button class="delete-artist_submit">Delete</button>
-                </div>
         `;
       })  
       .join("")}
