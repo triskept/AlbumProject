@@ -1,9 +1,11 @@
 import Artist from "./components/Artist"
 import EditArtist from "./components/EditArtist"
 import apiActions from "./api/apiActions"
+import ArtistAlbums from "./components/ArtistAlbums"
 
 export default () => {
     displayArtist()
+    displayArtistAlbums()
 }
 
 function displayArtist(){
@@ -16,6 +18,17 @@ function displayArtist(){
     });
 
     const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("artistIMG")){
+        const artistId = event.target.parentElement.querySelector(".artist_id").value;
+        apiActions.getRequest(`https://localhost:44342/api/artist/${artistId}`, artist => {
+            document.querySelector("#app").innerHTML = ArtistAlbums(artist);
+            console.log(artist);
+        });
+    }
+    });
+
+    // const app = document.querySelector("#app");
     app.addEventListener("click", function(){
     if(event.target.classList.contains("add-artist_submit")){
         const addArtist = event.target.parentElement.querySelector(
@@ -91,4 +104,7 @@ app.addEventListener("click", function() {
         })
     }
 });
+}
+
+function displayArtistAlbums(){
 }
